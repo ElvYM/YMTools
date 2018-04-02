@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iOS与H5交互练习</title>
+	<style type="text/css">
+	*{
+		font-size: 50px;
+	}
+	</style>
+</head>
+
+<body>
+<h3 id="header">我是信息展示框！</h3>
+
+      <div><input type="button" value="Alert 提示框" onclick="callJsAlert()"></div>
+      <br/>
+      <div><input type="button" value="Confirm 提示框" onclick="callJsConfirm()"></div><br/>
+    
+    <div>
+      <div><input type="button" value="Prompt 提示框" onclick="callJsInput()"></div><br/>
+      <div><input type="button" value="测试" onclick="calliOS('show love you','dear')"></div>
+      <div>Click me here: <a href="http://www.baidu.com">百度</a></div>
+    </div>
+    
+    <br/>
+    <div id="SwiftDiv">
+      <span id="jsParamFuncSpan" style="color: orange; font-size: 50px;"></span>
+    </div>
+    
+    <script type="text/javascript">
+      function callJsAlert() {
+        alert('Please show alert');
+        
+        <!--    JS调用OC方法:按照约定方法名和注册名    -->
+        window.webkit.messageHandlers.senderModel.postMessage({body: 'Alert'});
+      }
+    
+    function callJsConfirm() {
+      if (confirm('Confirm', 'Please show confirm')) {
+        document.getElementById('jsParamFuncSpan').innerHTML
+        = 'true';
+      } else {
+        document.getElementById('jsParamFuncSpan').innerHTML
+        = 'false';
+      }
+      
+      
+      window.webkit.messageHandlers.senderModel.postMessage({body: 'Confirm'});
+    }
+    
+    function callJsInput() {
+      var response = prompt('Hello', 'Please input a Text:');
+      document.getElementById('jsParamFuncSpan').innerHTML = response;
+      
+      
+      window.webkit.messageHandlers.senderModel.postMessage({body: response});
+      
+    }
+    
+    
+    
+    function tips(parameter) {
+        document.getElementById('header').innerHTML = '运行了tips方法。' + '参数:' + parameter;
+    }
+      </script>
+</body>
+</html>

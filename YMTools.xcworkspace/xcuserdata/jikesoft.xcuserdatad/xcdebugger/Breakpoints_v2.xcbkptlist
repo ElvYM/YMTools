@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTools/Controllers/KVO&#x4ee3;&#x7801;&#x539f;&#x7406;&#x63a2;&#x7a76;/&#x81ea;&#x5df1;&#x5b9e;&#x73b0;KVO/NSObject+KVO.m"
+            timestampString = "537247176.116413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "-YM_addObserver:forKey:withBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTools/Controllers/KVO&#x4ee3;&#x7801;&#x539f;&#x7406;&#x63a2;&#x7a76;/&#x81ea;&#x5df1;&#x5b9e;&#x73b0;KVO/NSObject+KVO.m"
+            timestampString = "537247176.118927"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "-YM_addObserver:forKey:withBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTools/Controllers/KVO&#x4ee3;&#x7801;&#x539f;&#x7406;&#x63a2;&#x7a76;/&#x81ea;&#x5df1;&#x5b9e;&#x73b0;KVO/NSObject+KVO.m"
+            timestampString = "537247176.119984"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-YM_addObserver:forKey:withBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTools/Controllers/KVO&#x4ee3;&#x7801;&#x539f;&#x7406;&#x63a2;&#x7a76;/&#x81ea;&#x5df1;&#x5b9e;&#x73b0;KVO/NSObject+KVO.m"
+            timestampString = "537247176.1203361"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "-YM_addObserver:forKey:withBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTools/Controllers/KVO&#x4ee3;&#x7801;&#x539f;&#x7406;&#x63a2;&#x7a76;/&#x81ea;&#x5df1;&#x5b9e;&#x73b0;KVO/NSObject+KVO.m"
+            timestampString = "537247176.120736"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "-YM_addObserver:forKey:withBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTools/Controllers/KVO&#x4ee3;&#x7801;&#x539f;&#x7406;&#x63a2;&#x7a76;/&#x81ea;&#x5df1;&#x5b9e;&#x73b0;KVO/NSObject+KVO.m"
+            timestampString = "537247176.121085"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "-YM_addObserver:forKey:withBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTools/Controllers/KVO&#x4ee3;&#x7801;&#x539f;&#x7406;&#x63a2;&#x7a76;/&#x81ea;&#x5df1;&#x5b9e;&#x73b0;KVO/NSObject+KVO.m"
+            timestampString = "537247176.121507"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "-hasSelector:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YMTools/Controllers/KVO&#x4ee3;&#x7801;&#x539f;&#x7406;&#x63a2;&#x7a76;/&#x81ea;&#x5df1;&#x5b9e;&#x73b0;KVO/NSObject+KVO.m"
+            timestampString = "537247176.122155"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "-hasSelector:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

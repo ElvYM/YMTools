@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  YMTools
+//
+//  Created by jike on 17/3/11.
+//  Copyright © 2017年 YM. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+/* 配置pch根目录地址  $(SRCROOT)/     */
+#import "HelpHeaderFile.h"
+#import "NSString+SafeString.h"
+#import "UIButton+YMButton.h"
+#import "EVNHelper.h"
+//时间日期
+#import "NSDate+YMDate.h"
+#import "UILabel+YMLabel.h"
+
+#import <MBProgressHUD.h>
+#import "MBProgressHUD+YMCustom.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <AFNetworking.h>
+#import <KVOController.h>
+#import <ChameleonFramework/Chameleon.h>
+#import <OnboardingViewController.h>
+#import <MJRefresh.h>
+// webSocket(facebook)
+#import <SRWebSocket.h>
+
+// 布局
+#import <Masonry.h>
+#endif /* PrefixHeader_pch */
+
