@@ -1,0 +1,16 @@
+platform :ios, '8.0'
+target "YMTools" do
+pod 'AFNetworking', '~> 3.0'
+pod 'Masonry', '~> 0.6.3'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'IGListKit', '~> 3.0'
+pod 'KVOController'
+pod 'ChameleonFramework'
+pod 'Onboard'
+pod 'MJRefresh'
+pod 'SocketRocket'
+pod 'DZNEmptyDataSet'
+pod 'Bugly'
+pod 'YTKNetwork' , '~>2.0.4'
+end
