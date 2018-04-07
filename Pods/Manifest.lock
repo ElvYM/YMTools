@@ -18,6 +18,7 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
+  - CYLTabBarController (1.17.6)
   - DZNEmptyDataSet (1.8.1)
   - IGListKit (3.1.1):
     - IGListKit/Default (= 3.1.1)
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Bugly
   - ChameleonFramework
+  - CYLTabBarController
   - DZNEmptyDataSet
   - IGListKit (~> 3.0)
   - KVOController
@@ -55,6 +57,7 @@ SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IGListKit: cb97f405ae43e59fe1da74271e19427ec20d3c07
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
@@ -66,6 +69,6 @@ SPEC CHECKSUMS:
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: e4fda257ac8c0daec72aa31046dd35c70b6f7388
+PODFILE CHECKSUM: b4d1974c6b181164b44475c0ecd18cd7aa9f9fbc
 
 COCOAPODS: 1.4.0
