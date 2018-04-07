@@ -11,6 +11,7 @@
 #import "NSURLSessionViewController.h"
 #import "ViewController.h"
 #import <Bugly/Bugly.h>
+#import "YMTabBarController.h"
 @interface AppDelegate ()<BuglyDelegate>
 
 @end
@@ -21,10 +22,9 @@ static NSString *BuglyID = @"119944f337";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    NSURLSessionViewController *sessionVC =[[NSURLSessionViewController alloc]init];
-    ViewController *viewController = [[ViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = nav;
+    self.window.rootViewController = [[YMTabBarController alloc] init];
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
     

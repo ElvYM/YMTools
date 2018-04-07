@@ -13,4 +13,5 @@ pod 'SocketRocket'
 pod 'DZNEmptyDataSet'
 pod 'Bugly'
 pod 'YTKNetwork' , '~>2.0.4'
+pod 'CYLTabBarController'
 end

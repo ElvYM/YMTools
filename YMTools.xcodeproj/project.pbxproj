@@ -68,6 +68,8 @@
 		F47756F7206B2987009A0AC6 /* TouchEventPrincipleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756F6206B2987009A0AC6 /* TouchEventPrincipleVC.m */; };
 		F47756FA206B2A31009A0AC6 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756F9206B2A31009A0AC6 /* TouchView.m */; };
 		F4863C5D2068D8D60008B46B /* TestFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4863C5C2068D8D60008B46B /* TestFW.framework */; };
+		F4E0116F2074DA590029B32E /* YMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E0116E2074DA590029B32E /* YMTabBarController.m */; };
+		F4E011722074DAB60029B32E /* YMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E011712074DAB60029B32E /* YMNavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +188,10 @@
 		F47756F8206B2A31009A0AC6 /* TouchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
 		F47756F9206B2A31009A0AC6 /* TouchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
 		F4863C5C2068D8D60008B46B /* TestFW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFW.framework; sourceTree = "<group>"; };
+		F4E0116D2074DA590029B32E /* YMTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTabBarController.h; sourceTree = "<group>"; };
+		F4E0116E2074DA590029B32E /* YMTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTabBarController.m; sourceTree = "<group>"; };
+		F4E011702074DAB60029B32E /* YMNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNavigationViewController.h; sourceTree = "<group>"; };
+		F4E011712074DAB60029B32E /* YMNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +471,7 @@
 		F47756B8206B28E0009A0AC6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F4E011692074D94D0029B32E /* Base */,
 				F47756B9206B28E0009A0AC6 /* KVO代码原理探究 */,
 				F47756C1206B28E0009A0AC6 /* Other */,
 				F47756C2206B28E0009A0AC6 /* Model */,
@@ -562,6 +569,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F4E011692074D94D0029B32E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F4E0116D2074DA590029B32E /* YMTabBarController.h */,
+				F4E0116E2074DA590029B32E /* YMTabBarController.m */,
+				F4E011702074DAB60029B32E /* YMNavigationViewController.h */,
+				F4E011712074DAB60029B32E /* YMNavigationViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -591,6 +609,7 @@
 		C6EA6EFA1E739DCE003F67D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YM;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = YM;
 				TargetAttributes = {
@@ -725,6 +744,7 @@
 				C68430E71F31C19000F8FDFE /* UIBezierPath+DWPathUtils.m in Sources */,
 				C6EA6F0A1E739DCE003F67D0 /* AppDelegate.m in Sources */,
 				C625E204204D1FE300F17804 /* NSString+Extension.m in Sources */,
+				F4E011722074DAB60029B32E /* YMNavigationViewController.m in Sources */,
 				F47756E3206B28E0009A0AC6 /* KVOPrincipleVC.m in Sources */,
 				C6FE7EA41FF0E76C00DC2F93 /* TYHSocketManager.m in Sources */,
 				C68D8B831EEAAFAA004625DA /* IntegralUserTipView.m in Sources */,
@@ -742,6 +762,7 @@
 				C6EA6F541E7E271C003F67D0 /* EVNCarouseCollectionViewFlowLayout.m in Sources */,
 				F47756EA206B28E0009A0AC6 /* WKWebViewController.m in Sources */,
 				F47756F7206B2987009A0AC6 /* TouchEventPrincipleVC.m in Sources */,
+				F4E0116F2074DA590029B32E /* YMTabBarController.m in Sources */,
 				C60168551EA8A00600FC31E0 /* YMCustomBtn.m in Sources */,
 				C6EA6F071E739DCE003F67D0 /* main.m in Sources */,
 				C607A9CD1EB4702D00BA583B /* NSFileManager+YMFileManager.m in Sources */,
