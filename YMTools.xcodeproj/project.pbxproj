@@ -70,6 +70,7 @@
 		F4863C5D2068D8D60008B46B /* TestFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4863C5C2068D8D60008B46B /* TestFW.framework */; };
 		F4E0116F2074DA590029B32E /* YMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E0116E2074DA590029B32E /* YMTabBarController.m */; };
 		F4E011722074DAB60029B32E /* YMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E011712074DAB60029B32E /* YMNavigationViewController.m */; };
+		F4EFB9B72078BBC600D9E3AD /* YMMasonryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EFB9B62078BBC600D9E3AD /* YMMasonryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +193,8 @@
 		F4E0116E2074DA590029B32E /* YMTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTabBarController.m; sourceTree = "<group>"; };
 		F4E011702074DAB60029B32E /* YMNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNavigationViewController.h; sourceTree = "<group>"; };
 		F4E011712074DAB60029B32E /* YMNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNavigationViewController.m; sourceTree = "<group>"; };
+		F4EFB9B52078BBC600D9E3AD /* YMMasonryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMMasonryView.h; sourceTree = "<group>"; };
+		F4EFB9B62078BBC600D9E3AD /* YMMasonryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMMasonryView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -565,6 +568,8 @@
 			children = (
 				F47756F8206B2A31009A0AC6 /* TouchView.h */,
 				F47756F9206B2A31009A0AC6 /* TouchView.m */,
+				F4EFB9B52078BBC600D9E3AD /* YMMasonryView.h */,
+				F4EFB9B62078BBC600D9E3AD /* YMMasonryView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -762,6 +767,7 @@
 				C6EA6F541E7E271C003F67D0 /* EVNCarouseCollectionViewFlowLayout.m in Sources */,
 				F47756EA206B28E0009A0AC6 /* WKWebViewController.m in Sources */,
 				F47756F7206B2987009A0AC6 /* TouchEventPrincipleVC.m in Sources */,
+				F4EFB9B72078BBC600D9E3AD /* YMMasonryView.m in Sources */,
 				F4E0116F2074DA590029B32E /* YMTabBarController.m in Sources */,
 				C60168551EA8A00600FC31E0 /* YMCustomBtn.m in Sources */,
 				C6EA6F071E739DCE003F67D0 /* main.m in Sources */,
