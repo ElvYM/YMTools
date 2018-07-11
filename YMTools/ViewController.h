@@ -10,6 +10,6 @@
 
 @interface ViewController : UIViewController
 
-
+- (int)getMaxNumber:(int)number;
 @end
 

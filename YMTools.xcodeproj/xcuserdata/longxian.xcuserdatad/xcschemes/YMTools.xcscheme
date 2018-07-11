@@ -29,6 +29,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F42D86DB20A9301E0090B2BC"
+               BuildableName = "YMToolsTests.xctest"
+               BlueprintName = "YMToolsTests"
+               ReferencedContainer = "container:YMTools.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -20,20 +20,41 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - CYLTabBarController (1.17.6)
   - DZNEmptyDataSet (1.8.1)
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
+  - GCDWebServer/WebDAV (3.4.2):
+    - GCDWebServer/Core
+  - GCDWebServer/WebUploader (3.4.2):
+    - GCDWebServer/Core
   - IGListKit (3.1.1):
     - IGListKit/Default (= 3.1.1)
   - IGListKit/Default (3.1.1):
     - IGListKit/Diffing
   - IGListKit/Diffing (3.1.1)
+  - JPVideoPlayer (2.4.0)
   - KVOController (1.2.0)
   - Masonry (0.6.4)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.15.1)
   - Onboard (2.3.1)
+  - ReactiveCocoa (2.5.2):
+    - ReactiveCocoa/UI (= 2.5.2)
+  - ReactiveCocoa/Core (2.5.2):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5.2)
+  - ReactiveCocoa/UI (2.5.2):
+    - ReactiveCocoa/Core
+  - RealReachability (1.2.2):
+    - RealReachability/Connection (= 1.2.2)
+    - RealReachability/Ping (= 1.2.2)
+  - RealReachability/Connection (1.2.2)
+  - RealReachability/Ping (1.2.2)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
   - SocketRocket (0.5.1)
+  - TZImagePickerController (2.0.0.9)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
 
@@ -43,15 +64,32 @@ DEPENDENCIES:
   - ChameleonFramework
   - CYLTabBarController
   - DZNEmptyDataSet
+  - GCDWebServer (~> 3.0)
+  - GCDWebServer/WebDAV (~> 3.0)
+  - GCDWebServer/WebUploader (~> 3.0)
   - IGListKit (~> 3.0)
+  - JPVideoPlayer
   - KVOController
   - Masonry (~> 0.6.3)
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh
   - Onboard
+  - ReactiveCocoa (from `https://github.com/zhao0/ReactiveCocoa.git`, tag `2.5.2`)
+  - RealReachability
   - SDWebImage (~> 3.7.3)
   - SocketRocket
+  - TZImagePickerController
   - YTKNetwork (~> 2.0.4)
+
+EXTERNAL SOURCES:
+  ReactiveCocoa:
+    :git: https://github.com/zhao0/ReactiveCocoa.git
+    :tag: 2.5.2
+
+CHECKOUT OPTIONS:
+  ReactiveCocoa:
+    :git: https://github.com/zhao0/ReactiveCocoa.git
+    :tag: 2.5.2
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
@@ -59,16 +97,21 @@ SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   IGListKit: cb97f405ae43e59fe1da74271e19427ec20d3c07
+  JPVideoPlayer: 3f02427aaf9ac3f34fe7d54403f28adb1f187564
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   Onboard: b6871f25ac753175b2ab9a362fb2feb26a81a311
+  ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
+  RealReachability: 7ea2093650004e5e30635edbf9d29ce9b9091001
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  TZImagePickerController: 9bf89512bb6de53e87897f2e17e607c126a199d6
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: b4d1974c6b181164b44475c0ecd18cd7aa9f9fbc
+PODFILE CHECKSUM: b32283ac7810e6bc44306dbf3303c4648dc7f7e0
 
 COCOAPODS: 1.4.0
