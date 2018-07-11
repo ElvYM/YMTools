@@ -14,13 +14,12 @@
  */
 #define MainScreenHeight ([UIScreen mainScreen].bounds.size.height)
 #define MainScreenWidth ([UIScreen mainScreen].bounds.size.width)
-#define ScreenScaleX ([UIScreen mainScreen].bounds.size.width/320.0)
-#define ScreenScaleY ([UIScreen mainScreen].bounds.size.height/480.0)
+#define ScreenScaleX ([UIScreen mainScreen].bounds.size.width/375.0)
+#define ScreenScaleY ([UIScreen mainScreen].bounds.size.height/667.0)
 
 
 // MARK: 系统版本
 #define SYSTEM_VERSION   [[UIDevice currentDevice].systemVersion floatValue]
-
 
 /** iPhone */
 #define YM_isIphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
@@ -34,7 +33,17 @@
 /** 判断 iOS 8 或更高的系统版本 */
 #define YM_IOS_VERSION_8_OR_LATER (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) ? (YES) : (NO))
 
+//是否是空对象
+#define YMIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
 
+
+//由角度转换弧度
+#define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
+//由弧度转换角度
+#define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
 
 
 //***************************************************************//

@@ -9,13 +9,16 @@
 #import "WKWebViewController.h"
 #import <WebKit/WebKit.h>
 #import <JavaScriptCore/JavaScriptCore.h>
-@interface WKWebViewController ()<WKNavigationDelegate,WKUIDelegate>
+@interface WKWebViewController ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 @property (strong, nonatomic)WKWebView * webView;
 
 @property (strong, nonatomic)UIProgressView * progressView;
 @end
 
 @implementation WKWebViewController
+
+
+
 #pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +33,8 @@
 - (void)configUI {
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"调起JS" style:UIBarButtonItemStyleDone target:self action:@selector(runJSFunction)];
     
+    YMWeakSelf(self);
+    
     WKWebViewConfiguration *config = [WKWebViewConfiguration new];
     //初始化偏好设置属性：preferences
     config.preferences = [WKPreferences new];
@@ -39,12 +44,21 @@
     config.preferences.javaScriptEnabled = YES;
     //不通过用户交互，是否可以打开窗口
     config.preferences.javaScriptCanOpenWindowsAutomatically = NO;
+    
+    // 自适应屏幕宽度js
+//    WKUserContentController *userContentController = [[WKUserContentController alloc] init];
+//    NSString *jSString = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+//    WKUserScript *wkUserScript = [[WKUserScript alloc] initWithSource:jSString injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+//    [userContentController addUserScript:wkUserScript];
+    
     //通过JS与webView内容交互
     config.userContentController = [WKUserContentController new];
     // 注入JS对象名称senderModel，当JS通过senderModel来调用时，我们可以在WKScriptMessageHandler代理中接收到
-    [config.userContentController addScriptMessageHandler:self name:@"senderModel"];
+    
+    [config.userContentController addScriptMessageHandler:weakself name:@"senderModel"];
     self.webView = [[WKWebView alloc]initWithFrame:self.view.bounds configuration:config];
-    NSURL *path = [[NSBundle mainBundle] URLForResource:@"WKWebViewText" withExtension:@"html"];
+    NSURL *path = nil;
+    path = [[NSBundle mainBundle] URLForResource:@"WKWebViewText" withExtension:@"html"];
     [self.webView loadRequest:[NSURLRequest requestWithURL:path]];
     [self.view addSubview:self.webView];
     
@@ -116,24 +130,29 @@
 //在发送请求之前，决定是否跳转
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
     NSString *hostname = navigationAction.request.URL.host.lowercaseString;
-    NSLog(@"%@",hostname);
+    NSURL *url = navigationAction.request.URL;
+    
+    NSLog(@"\nname--%@\nurl--%@",hostname,url);
     if (navigationAction.navigationType == WKNavigationTypeLinkActivated
-        && ![hostname containsString:@".baidu.com"]) {
+        && [url.relativeString containsString:@"http:"]) {
         // 对于跨域，需要手动跳转
-        [[UIApplication sharedApplication] openURL:navigationAction.request.URL];
+//        [[UIApplication sharedApplication] openURL:navigationAction.request.URL];
         
+        [self.webView loadRequest:[NSURLRequest requestWithURL:navigationAction.request.URL]];
         // 不允许web内跳转
-        decisionHandler(WKNavigationActionPolicyCancel);
+        decisionHandler(WKNavigationActionPolicyAllow);
+        
     } else {
         self.progressView.alpha = 1.0;
         decisionHandler(WKNavigationActionPolicyAllow);
     }
 }
-//在响应完成时，调用的方法。如果设置为不允许响应，web内容就不会传过来
 
+//在响应完成时，调用的方法。如果设置为不允许响应，web内容就不会传过来
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     decisionHandler(WKNavigationResponsePolicyAllow);
 }
+
 //接收到服务器跳转请求之后调用
 -(void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation{
     
@@ -214,13 +233,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)dealloc {
-    //移除kvo
-    [_webView removeObserver:self forKeyPath:@"loading" context:nil];
-    [_webView removeObserver:self forKeyPath:@"title" context:nil];
-    [_webView removeObserver:self forKeyPath:@"estimatedProgress" context:nil];
-    
-    //移除
-    [[_webView configuration].userContentController removeScriptMessageHandlerForName:@"senderModel"];
-}
+
+
 @end

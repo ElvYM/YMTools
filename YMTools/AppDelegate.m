@@ -20,6 +20,8 @@
 static NSString *BuglyID = @"119944f337";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSLog(@"del:%@",NSStringFromSelector(_cmd));
+    NSLog(@"del:%s",__func__);
     // Override point for customization after application launch.
 //    NSURLSessionViewController *sessionVC =[[NSURLSessionViewController alloc]init];
     
@@ -32,8 +34,35 @@ static NSString *BuglyID = @"119944f337";
 //    [self getError];
     
     [self bugly];
+    
+    [self versionInfo];
 
     return YES;
+}
+
+- (void)versionInfo {
+    NSLog(@"SYSTEM_VERSION:%f",SYSTEM_VERSION);
+    
+    NSLog(@"YM_isIphone:%d",YM_isIphone);
+    
+    NSLog(@"YM_CurrentLanguage:%@",YM_CurrentLanguage);
+    
+    NSLog(@"YM_AppVersion:%@",YM_AppVersion);
+    
+    NSString *str1;
+    NSString *str2 = nil;
+    NSString *str3 = @"";
+    
+    UIButton *btn;
+    
+    NSArray *arr;
+    NSArray *arr1 = @[@""];
+    
+    NSLog(@"1:%d---2:%d--3:%d--4:%d--5:%d--6:%d",YMIsEmpty(str1),YMIsEmpty(str2),YMIsEmpty(str3),YMIsEmpty(btn),YMIsEmpty(arr),YMIsEmpty(arr1));
+    
+    
+    
+   
 }
 
 - (void)bugly {
@@ -89,8 +118,29 @@ void UncaughtExceptionHandler(NSException *exception){
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    // 设置后台快照：修改界面内容，生成需要的快照。
+    // 其他界面中可以监听applicationWillResignActive通知，实现。
+    UIView *snapShotView = [UIView new];
+    snapShotView.backgroundColor = [UIColor blueColor].flatten;
+    snapShotView.tag = 99;
+    [[UIApplication sharedApplication].keyWindow addSubview:snapShotView];
+    
+    UILabel *label = [UILabel new];
+    label.textColor = FlatRed;
+    label.text = @"捂眼睛，看不到~~";
+    [snapShotView addSubview:label];
+    
+    [snapShotView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo([UIApplication sharedApplication].keyWindow);
+    }];
+    
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(snapShotView);
+    }];
+    
+    
+    // 如果是不需要显示快照，比如当前页面展示的是无网络的错误提示界面。使用`ignoreSnapshotOnNextApplicationLaunch`，会使用启动图代替快照。
+//    [[UIApplication sharedApplication] ignoreSnapshotOnNextApplicationLaunch];
 }
 
 
@@ -106,13 +156,32 @@ void UncaughtExceptionHandler(NSException *exception){
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // 返回应用时执行的操作。
+    UIView *snapShotView = [[UIApplication sharedApplication].keyWindow viewWithTag:99];
+    if (snapShotView) {
+        [snapShotView removeFromSuperview];
+    }
 }
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/**
+ 状态恢复：默认是禁止的，如果需要启用，必须手动在委托中设置
+ */
+- (BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder {
+    
+    return YES;
+}
+
+-(BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder {
+    return YES;
+}
+
+
+
 
 
 @end

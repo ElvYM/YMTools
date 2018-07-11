@@ -40,6 +40,9 @@
 // 变色龙扁平化颜色管理第三方
 #import "ChameleonUsageViewController.h"
 
+//IGListKit
+#import "IGListKitViewController.h"
+
 // 打包framework静态文件
 #import <TestFW/Tool.h>
 
@@ -66,6 +69,51 @@
 //    [self defaultTest];
 //    [self tempTest];
 //    [self MBProgressUsageTest];
+    
+//    [self getRequest];
+    [self postRequest];
+    self.navigationController.title = @"111";
+}
+
+
+/**
+ Get
+ */
+- (void)getRequest {
+    NSString *url = @"http://api.longxianst.com/API/Home/GetIndex?&communityid=38&terminal=iOS11.2,Simulator&OSVersion=AppStore.IOS1.1.2&sign2=dcda25abd30bc8f0d2de8a2d9fb372f4";
+    
+    [[AFRequestManager sharedManager] GET:url parameters:nil completion:^(RequestResponse *response) {
+        NSDictionary *dic = (NSDictionary *)response.responseObject;
+        NSLog(@"%@",dic);
+    }];
+}
+
+
+/**
+ Post 字符串
+ */
+- (void)postRequest {
+    NSString *url = @"http://api.longxianst.com/API/Order/GetOrderInfo?username=17621555911&shopuser=00000&addressid=&communityid=38&terminal=iOS11.2,Simulator&OSVersion=AppStore.IOS2.0.0&sign2=3fbec88314c8d2e8e1cd259f98d2d00b";
+    
+    NSDictionary *postDic = @{@"shopcartids":@[@"41087",@"41088",@"41090"],@"coupon":@[@{@"amount":@"",@"title":@"",@"coupontype":@"",@"couponno":@""}],@"deliverytype":@"1"};
+    
+    
+//    [[AFRequestManager sharedManager] POST:url perfixStr:@"data=" parameters:postDic completion:^(RequestResponse *response) {
+//        NSLog(@"%@",response.responseObject);
+//    }];
+    
+    [[NetworkManager shareInstance] post:url prefixStr:@"data=" params:postDic success:^(id result, NSURLSessionTask *task) {
+        NSLog(@"%@",result);
+    } failure:^(NSError *error, NSURLSessionTask *task) {
+        NSLog(@"%@",error);
+    }];
+    
+}
+
+
+// 单元测试
+-(int)getMaxNumber:(int)number {
+    return number;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -118,8 +166,10 @@
     [self addCell:@"iOS事件" class:@"TouchEventPrincipleVC"];
     [self addCell:@"MasonryUsageDemo" class:@"MasonryUsageViewController"];
     [self addCell:@"扁平化颜色管理&渐变色Chameleon" class:@"ChameleonUsageViewController"];
+    [self addCell:@"GCDWebServer" class:@"GCDWebServerViewController"];
+    [self addCell:@"GCDWebUploader" class:@"GCDWebUploadViewController"];
+    [self addCell:@"IGListKit_Test" class:NSStringFromClass([IGListKitViewController class])];
 
-    
 }
 
 - (void)addCell:(NSString *)title class:(NSString *)className {

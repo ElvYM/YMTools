@@ -10,6 +10,8 @@
 
 @interface NSDate (YMDate)
 #pragma mark - Base
+// 获取当前时间，yyyy-MM-dd HH:mm:ss
++ (NSString *)getCurrentTime;
 
 /**
  获取当前日期(年月日时分秒)

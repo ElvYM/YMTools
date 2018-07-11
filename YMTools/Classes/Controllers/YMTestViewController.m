@@ -39,7 +39,7 @@
 //    [self defaultTest];
 //    [self tempTest];
 //    [self SDWebImageTest];
-//    [self MBProgressUsageTest];
+    [self MBProgressUsageTest];
 //    [self showHint:@"33412"];
 //    [self redLabelTest];
         
@@ -147,11 +147,11 @@
  MBProgressHUD Usage Test
  */
 - (void)MBProgressUsageTest {
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [MBProgressHUD showCustomHud:self.view];
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
-                [MBProgressHUD hideHUDForView:self.view animated:YES];
+                [MBProgressHUD hideCustomHud:self.view];
             });
         });
     });

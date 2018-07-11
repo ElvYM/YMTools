@@ -8,7 +8,7 @@
 
 #import "YMTabBarController.h"
 #import "ViewController.h"
-
+#import "MainNavViewController.h"
 
 @interface YMTabBarController ()<UITabBarControllerDelegate>
 
@@ -22,19 +22,19 @@
     [self addTabarItems];
     [self addChildViewControllers];
     self.delegate = self;
-    
 }
+
 - (void)addChildViewControllers
 {
-    UINavigationController *one = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UINavigationController *one = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
-    UINavigationController *two = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UINavigationController *two = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
-    UINavigationController *three = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UINavigationController *three = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
-    UINavigationController *four = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UINavigationController *four = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
-    UINavigationController *five = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UINavigationController *five = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
     self.viewControllers = @[two, one, three, five, four];
     
@@ -49,7 +49,7 @@
                                                  };
     
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"预演",
+                                                  CYLTabBarItemTitle : @"动画",
                                                   CYLTabBarItemImage : @"tabBar_friendTrends_icon",
                                                   CYLTabBarItemSelectedImage : @"tabBar_friendTrends_click_icon",
                                                   };
@@ -68,17 +68,18 @@
                                                  CYLTabBarItemImage : @"tabbar_discover",
                                                  CYLTabBarItemSelectedImage : @"tabbar_discover_highlighted"
                                                  };
-    self.tabBarItemsAttributes = @[    secondTabBarItemsAttributes,
-                                       firstTabBarItemsAttributes,
+    self.tabBarItemsAttributes = @[    firstTabBarItemsAttributes,
+                                       secondTabBarItemsAttributes,
                                        thirdTabBarItemsAttributes,
-                                       fifthTabBarItemsAttributes,
-                                       fourthTabBarItemsAttributes
+                                       fourthTabBarItemsAttributes,
+                                       fifthTabBarItemsAttributes
                                        ];
 }
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
     return YES;
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
