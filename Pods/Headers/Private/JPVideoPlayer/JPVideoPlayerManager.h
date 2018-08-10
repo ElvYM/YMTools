@@ -1,1 +1,0 @@
-../../../JPVideoPlayer/JPVideoPlayer/JPVideoPlayerManager.h

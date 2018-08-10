@@ -14,11 +14,11 @@ pod 'DZNEmptyDataSet'
 pod 'Bugly'
 pod 'YTKNetwork' , '~>2.0.4'
 pod 'CYLTabBarController'
-pod 'JPVideoPlayer'
 pod 'GCDWebServer', '~>3.0'
 pod 'GCDWebServer/WebUploader', '~> 3.0'
 pod 'GCDWebServer/WebDAV', '~> 3.0'
 pod 'TZImagePickerController'
 pod 'RealReachability'
 pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+
 end

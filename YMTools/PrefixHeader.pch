@@ -10,6 +10,7 @@
 #define PrefixHeader_pch
 #import <UIKit/UIKit.h>
 /* 配置pch根目录地址  $(SRCROOT)/     */
+#import "GlobalConst.h"
 
 /**
  分类
@@ -20,9 +21,17 @@
 #import "NSString+SafeString.h"
 #import "UIButton+YMButton.h"
 #import "EVNHelper.h"
+#import "UIView+Frame.h"
+
 //时间日期
 #import "NSDate+YMDate.h"
 #import "UILabel+YMLabel.h"
+
+
+/*
+ View
+ */
+#import "YMFastButton.h"
 
 #import <MBProgressHUD.h>
 #import "MBProgressHUD+YMCustom.h"

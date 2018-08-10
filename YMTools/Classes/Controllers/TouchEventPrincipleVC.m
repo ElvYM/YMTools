@@ -22,8 +22,6 @@
 
 
 #pragma Touch Event
-
-
 -(TouchView *)touchView {
     if (!_touchView) {
         _touchView = [TouchView new];

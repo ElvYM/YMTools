@@ -152,7 +152,7 @@
 -(UIButton *)btn {
     if (!_btn) {
         _btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _btn.backgroundColor = [UIColor cyanColor];
+        _btn.backgroundColor = [UIColor redColor];
         [self addSubview:_btn];
         [_btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
         

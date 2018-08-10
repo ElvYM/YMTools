@@ -127,7 +127,7 @@ static NSString *urlStr = @"http://lcatapi.lmboss.com/API/Cart/GetShopcart?commu
  遵守<NSURLSessionDownloadDelegate>协议，实现代理方法。可以在didWriteData(写数据)代理方法，监听下载进度
  */
 - (void)urlSessionDownloadByWayDelegate {
-    NSURL *url = [NSURL URLWithString:@"[http://120.25.226.186:32812/resources/images/minion_03.png"];
+    NSURL *url = [NSURL URLWithString:@"https://vd3.bdstatic.com/mda-ig2fe41u42hmqq1d/hd/mda-ig2fe41u42hmqq1d.mp4?playlist=%5B%22hd%22%2C%22sc%22%5D&auth_key=1531709806-0-0-e8e5b40709d7fd55a9b82e386068acf8&bcevod_channel=searchbox_feed&pd=feedtab_h5"];
     // Configuration:配置信息,用默认的即可
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
     NSURLSessionDownloadTask *downloadTask = [session downloadTaskWithRequest:[NSURLRequest requestWithURL:url]];
@@ -208,7 +208,7 @@ static NSString *urlStr = @"http://lcatapi.lmboss.com/API/Cart/GetShopcart?commu
     
     // 2.剪切文件
     [[NSFileManager defaultManager]moveItemAtURL:location toURL:[NSURL fileURLWithPath:fullPath] error:nil];
-    NSLog(@"%@",fullPath);
+    NSLog(@"final_path:%@",fullPath);
 }
 
 #pragma mark -- NSURLSessionDataTask 断点下载 | 支持离线

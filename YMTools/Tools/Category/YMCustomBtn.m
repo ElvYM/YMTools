@@ -35,4 +35,5 @@
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
     return _titleFrame;
 }
+
 @end
