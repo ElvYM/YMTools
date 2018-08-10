@@ -45,10 +45,33 @@
 		F42D86DF20A9301E0090B2BC /* YMToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D86DE20A9301E0090B2BC /* YMToolsTests.m */; };
 		F42D871A20B011E90090B2BC /* RequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D871920B011E90090B2BC /* RequestResponse.m */; };
 		F42D871D20B012750090B2BC /* AFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D871C20B012750090B2BC /* AFRequestManager.m */; };
+		F4354529210AA7FC0064D811 /* YMFastButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4354528210AA7FC0064D811 /* YMFastButton.m */; };
+		F435452C210AC2730064D811 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F435452B210AC2730064D811 /* UIView+Frame.m */; };
 		F4403E7E206B971100BDBAF1 /* MasonryUsageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4403E7C206B971100BDBAF1 /* MasonryUsageViewController.m */; };
 		F4403E7F206B971100BDBAF1 /* MasonryUsageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4403E7D206B971100BDBAF1 /* MasonryUsageViewController.xib */; };
 		F4403E83206CBBE400BDBAF1 /* ChameleonUsageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4403E81206CBBE400BDBAF1 /* ChameleonUsageViewController.m */; };
 		F4403E84206CBBE400BDBAF1 /* ChameleonUsageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4403E82206CBBE400BDBAF1 /* ChameleonUsageViewController.xib */; };
+		F441FEC320F5B51900C18432 /* YMGuidancePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F441FEC220F5B51900C18432 /* YMGuidancePageCell.m */; };
+		F441FEC620F5CD8B00C18432 /* YMGuidancePapgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F441FEC520F5CD8B00C18432 /* YMGuidancePapgeController.m */; };
+		F4471F8720FDF52400879FA0 /* JPVideoPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F8420FDF52400879FA0 /* JPVideoPlayerDetailViewController.m */; };
+		F4471F8820FDF52400879FA0 /* JPVideoPlayerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4471F8620FDF52400879FA0 /* JPVideoPlayerDetailViewController.xib */; };
+		F4471FA920FDF6B000879FA0 /* JPVideoPlayerDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F8C20FDF6B000879FA0 /* JPVideoPlayerDownloader.m */; };
+		F4471FAA20FDF6B000879FA0 /* JPVideoPlayerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F8D20FDF6B000879FA0 /* JPVideoPlayerCache.m */; };
+		F4471FAB20FDF6B000879FA0 /* UIView+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F9020FDF6B000879FA0 /* UIView+WebVideoCache.m */; };
+		F4471FAC20FDF6B000879FA0 /* JPVideoPlayerCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F9120FDF6B000879FA0 /* JPVideoPlayerCompat.m */; };
+		F4471FAD20FDF6B000879FA0 /* JPVideoPlayerResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F9520FDF6B000879FA0 /* JPVideoPlayerResourceLoader.m */; };
+		F4471FAE20FDF6B000879FA0 /* JPVideoPlayerCacheFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F9A20FDF6B000879FA0 /* JPVideoPlayerCacheFile.m */; };
+		F4471FAF20FDF6B000879FA0 /* JPVideoPlayerControlViews.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F9B20FDF6B000879FA0 /* JPVideoPlayerControlViews.m */; };
+		F4471FB020FDF6B000879FA0 /* JPVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4471F9D20FDF6B000879FA0 /* JPVideoPlayer.bundle */; };
+		F4471FB120FDF6B000879FA0 /* UITableView+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471F9F20FDF6B000879FA0 /* UITableView+WebVideoCache.m */; };
+		F4471FB220FDF6B000879FA0 /* JPVideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471FA020FDF6B000879FA0 /* JPVideoPlayerManager.m */; };
+		F4471FB320FDF6B000879FA0 /* JPVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471FA420FDF6B000879FA0 /* JPVideoPlayer.m */; };
+		F4471FB420FDF6B000879FA0 /* JPVideoPlayerSupportUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471FA520FDF6B000879FA0 /* JPVideoPlayerSupportUtils.m */; };
+		F4471FB520FDF6B000879FA0 /* UITableViewCell+WebVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471FA620FDF6B000879FA0 /* UITableViewCell+WebVideoCache.m */; };
+		F4471FB620FDF6B000879FA0 /* JPVideoPlayerCachePath.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471FA720FDF6B000879FA0 /* JPVideoPlayerCachePath.m */; };
+		F4471FB720FDF6B000879FA0 /* JPResourceLoadingRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471FA820FDF6B000879FA0 /* JPResourceLoadingRequestTask.m */; };
+		F4471FBA20FEC78100879FA0 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471FB920FEC78100879FA0 /* WKWebViewController.m */; };
+		F4471FBD20FEC86C00879FA0 /* VideoModle.m in Sources */ = {isa = PBXBuildFile; fileRef = F4471FBC20FEC86C00879FA0 /* VideoModle.m */; };
 		F4585B952084841500178F80 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F4585B942084841500178F80 /* NullSafe.m */; };
 		F4585B982084849900178F80 /* UIView+GestureCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = F4585B962084849900178F80 /* UIView+GestureCallback.m */; };
 		F47070E720E0E18900422FC2 /* IGListKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47070E620E0E18900422FC2 /* IGListKitViewController.m */; };
@@ -60,7 +83,6 @@
 		F47756E7206B28E0009A0AC6 /* FBKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47756CA206B28E0009A0AC6 /* FBKVOViewController.xib */; };
 		F47756E8206B28E0009A0AC6 /* HookButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756CC206B28E0009A0AC6 /* HookButtonViewController.m */; };
 		F47756E9206B28E0009A0AC6 /* NSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756CD206B28E0009A0AC6 /* NSURLSessionViewController.m */; };
-		F47756EA206B28E0009A0AC6 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756CE206B28E0009A0AC6 /* WKWebViewController.m */; };
 		F47756EB206B28E0009A0AC6 /* SRWebSocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47756CF206B28E0009A0AC6 /* SRWebSocketViewController.xib */; };
 		F47756EC206B28E0009A0AC6 /* XibTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47756D0206B28E0009A0AC6 /* XibTestViewController.xib */; };
 		F47756ED206B28E0009A0AC6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756D1206B28E0009A0AC6 /* WebViewController.m */; };
@@ -73,6 +95,7 @@
 		F47756F4206B28E0009A0AC6 /* MultiThreadForDelayeShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756DF206B28E0009A0AC6 /* MultiThreadForDelayeShowVC.m */; };
 		F47756F7206B2987009A0AC6 /* TouchEventPrincipleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756F6206B2987009A0AC6 /* TouchEventPrincipleVC.m */; };
 		F47756FA206B2A31009A0AC6 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756F9206B2A31009A0AC6 /* TouchView.m */; };
+		F47F2516210D7041002252C8 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F47F2515210D7041002252C8 /* GlobalConst.m */; };
 		F4863C5D2068D8D60008B46B /* TestFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4863C5C2068D8D60008B46B /* TestFW.framework */; };
 		F4D5A02920BBA95B0047CBA5 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D5A02820BBA95B0047CBA5 /* NetworkManager.m */; };
 		F4D5A02C20BBB3020047CBA5 /* NSNotificationCenter+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D5A02B20BBB3010047CBA5 /* NSNotificationCenter+RACSupport.m */; };
@@ -171,12 +194,58 @@
 		F42D871920B011E90090B2BC /* RequestResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestResponse.m; sourceTree = "<group>"; };
 		F42D871B20B012750090B2BC /* AFRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFRequestManager.h; sourceTree = "<group>"; };
 		F42D871C20B012750090B2BC /* AFRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFRequestManager.m; sourceTree = "<group>"; };
+		F4354527210AA7FC0064D811 /* YMFastButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMFastButton.h; sourceTree = "<group>"; };
+		F4354528210AA7FC0064D811 /* YMFastButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMFastButton.m; sourceTree = "<group>"; };
+		F435452A210AC2730064D811 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		F435452B210AC2730064D811 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		F4403E7B206B971100BDBAF1 /* MasonryUsageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryUsageViewController.h; sourceTree = "<group>"; };
 		F4403E7C206B971100BDBAF1 /* MasonryUsageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryUsageViewController.m; sourceTree = "<group>"; };
 		F4403E7D206B971100BDBAF1 /* MasonryUsageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasonryUsageViewController.xib; sourceTree = "<group>"; };
 		F4403E80206CBBE400BDBAF1 /* ChameleonUsageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChameleonUsageViewController.h; sourceTree = "<group>"; };
 		F4403E81206CBBE400BDBAF1 /* ChameleonUsageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChameleonUsageViewController.m; sourceTree = "<group>"; };
 		F4403E82206CBBE400BDBAF1 /* ChameleonUsageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChameleonUsageViewController.xib; sourceTree = "<group>"; };
+		F441FEC120F5B51900C18432 /* YMGuidancePageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMGuidancePageCell.h; sourceTree = "<group>"; };
+		F441FEC220F5B51900C18432 /* YMGuidancePageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMGuidancePageCell.m; sourceTree = "<group>"; };
+		F441FEC420F5CD8B00C18432 /* YMGuidancePapgeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMGuidancePapgeController.h; sourceTree = "<group>"; };
+		F441FEC520F5CD8B00C18432 /* YMGuidancePapgeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMGuidancePapgeController.m; sourceTree = "<group>"; };
+		F4471F8420FDF52400879FA0 /* JPVideoPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDetailViewController.m; sourceTree = "<group>"; };
+		F4471F8520FDF52400879FA0 /* JPVideoPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerDetailViewController.h; sourceTree = "<group>"; };
+		F4471F8620FDF52400879FA0 /* JPVideoPlayerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDetailViewController.xib; sourceTree = "<group>"; };
+		F4471F8A20FDF6B000879FA0 /* JPVideoPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerManager.h; sourceTree = "<group>"; };
+		F4471F8B20FDF6B000879FA0 /* UITableView+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+WebVideoCache.h"; sourceTree = "<group>"; };
+		F4471F8C20FDF6B000879FA0 /* JPVideoPlayerDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDownloader.m; sourceTree = "<group>"; };
+		F4471F8D20FDF6B000879FA0 /* JPVideoPlayerCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCache.m; sourceTree = "<group>"; };
+		F4471F8E20FDF6B000879FA0 /* JPVideoPlayerCacheFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCacheFile.h; sourceTree = "<group>"; };
+		F4471F8F20FDF6B000879FA0 /* JPVideoPlayerControlViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerControlViews.h; sourceTree = "<group>"; };
+		F4471F9020FDF6B000879FA0 /* UIView+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebVideoCache.m"; sourceTree = "<group>"; };
+		F4471F9120FDF6B000879FA0 /* JPVideoPlayerCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCompat.m; sourceTree = "<group>"; };
+		F4471F9220FDF6B000879FA0 /* JPVideoPlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerProtocol.h; sourceTree = "<group>"; };
+		F4471F9320FDF6B000879FA0 /* JPVideoPlayerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerKit.h; sourceTree = "<group>"; };
+		F4471F9420FDF6B000879FA0 /* JPVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayer.h; sourceTree = "<group>"; };
+		F4471F9520FDF6B000879FA0 /* JPVideoPlayerResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerResourceLoader.m; sourceTree = "<group>"; };
+		F4471F9620FDF6B000879FA0 /* JPResourceLoadingRequestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPResourceLoadingRequestTask.h; sourceTree = "<group>"; };
+		F4471F9720FDF6B000879FA0 /* JPVideoPlayerCachePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCachePath.h; sourceTree = "<group>"; };
+		F4471F9820FDF6B000879FA0 /* UITableViewCell+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WebVideoCache.h"; sourceTree = "<group>"; };
+		F4471F9920FDF6B000879FA0 /* JPVideoPlayerSupportUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerSupportUtils.h; sourceTree = "<group>"; };
+		F4471F9A20FDF6B000879FA0 /* JPVideoPlayerCacheFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCacheFile.m; sourceTree = "<group>"; };
+		F4471F9B20FDF6B000879FA0 /* JPVideoPlayerControlViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerControlViews.m; sourceTree = "<group>"; };
+		F4471F9C20FDF6B000879FA0 /* JPVideoPlayerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCache.h; sourceTree = "<group>"; };
+		F4471F9D20FDF6B000879FA0 /* JPVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JPVideoPlayer.bundle; sourceTree = "<group>"; };
+		F4471F9E20FDF6B000879FA0 /* JPVideoPlayerDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerDownloader.h; sourceTree = "<group>"; };
+		F4471F9F20FDF6B000879FA0 /* UITableView+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+WebVideoCache.m"; sourceTree = "<group>"; };
+		F4471FA020FDF6B000879FA0 /* JPVideoPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerManager.m; sourceTree = "<group>"; };
+		F4471FA120FDF6B000879FA0 /* JPVideoPlayerCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerCompat.h; sourceTree = "<group>"; };
+		F4471FA220FDF6B000879FA0 /* UIView+WebVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebVideoCache.h"; sourceTree = "<group>"; };
+		F4471FA320FDF6B000879FA0 /* JPVideoPlayerResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerResourceLoader.h; sourceTree = "<group>"; };
+		F4471FA420FDF6B000879FA0 /* JPVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayer.m; sourceTree = "<group>"; };
+		F4471FA520FDF6B000879FA0 /* JPVideoPlayerSupportUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerSupportUtils.m; sourceTree = "<group>"; };
+		F4471FA620FDF6B000879FA0 /* UITableViewCell+WebVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WebVideoCache.m"; sourceTree = "<group>"; };
+		F4471FA720FDF6B000879FA0 /* JPVideoPlayerCachePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerCachePath.m; sourceTree = "<group>"; };
+		F4471FA820FDF6B000879FA0 /* JPResourceLoadingRequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPResourceLoadingRequestTask.m; sourceTree = "<group>"; };
+		F4471FB820FEC78100879FA0 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		F4471FB920FEC78100879FA0 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		F4471FBB20FEC86C00879FA0 /* VideoModle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModle.h; sourceTree = "<group>"; };
+		F4471FBC20FEC86C00879FA0 /* VideoModle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModle.m; sourceTree = "<group>"; };
 		F4585B942084841500178F80 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		F4585B962084849900178F80 /* UIView+GestureCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureCallback.m"; sourceTree = "<group>"; };
 		F4585B972084849900178F80 /* UIView+GestureCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureCallback.h"; sourceTree = "<group>"; };
@@ -198,7 +267,6 @@
 		F47756CB206B28E0009A0AC6 /* YMLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLabelViewController.h; sourceTree = "<group>"; };
 		F47756CC206B28E0009A0AC6 /* HookButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookButtonViewController.m; sourceTree = "<group>"; };
 		F47756CD206B28E0009A0AC6 /* NSURLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionViewController.m; sourceTree = "<group>"; };
-		F47756CE206B28E0009A0AC6 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		F47756CF206B28E0009A0AC6 /* SRWebSocketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SRWebSocketViewController.xib; sourceTree = "<group>"; };
 		F47756D0206B28E0009A0AC6 /* XibTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibTestViewController.xib; sourceTree = "<group>"; };
 		F47756D1206B28E0009A0AC6 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -210,7 +278,6 @@
 		F47756D7206B28E0009A0AC6 /* SRWebSocketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocketViewController.h; sourceTree = "<group>"; };
 		F47756D8206B28E0009A0AC6 /* XibTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibTestViewController.m; sourceTree = "<group>"; };
 		F47756D9206B28E0009A0AC6 /* EmptyDataSetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyDataSetTableViewController.h; sourceTree = "<group>"; };
-		F47756DA206B28E0009A0AC6 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		F47756DB206B28E0009A0AC6 /* NSURLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionViewController.h; sourceTree = "<group>"; };
 		F47756DC206B28E0009A0AC6 /* HookButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookButtonViewController.h; sourceTree = "<group>"; };
 		F47756DD206B28E0009A0AC6 /* YMLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLabelViewController.m; sourceTree = "<group>"; };
@@ -221,6 +288,8 @@
 		F47756F6206B2987009A0AC6 /* TouchEventPrincipleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchEventPrincipleVC.m; sourceTree = "<group>"; };
 		F47756F8206B2A31009A0AC6 /* TouchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
 		F47756F9206B2A31009A0AC6 /* TouchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
+		F47F2514210D7041002252C8 /* GlobalConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConst.h; sourceTree = "<group>"; };
+		F47F2515210D7041002252C8 /* GlobalConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConst.m; sourceTree = "<group>"; };
 		F4863C5C2068D8D60008B46B /* TestFW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFW.framework; sourceTree = "<group>"; };
 		F4D5A02720BBA95B0047CBA5 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		F4D5A02820BBA95B0047CBA5 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
@@ -328,6 +397,7 @@
 		C68D8B801EEAAF9E004625DA /* YMCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				F441FEC020F5B4C000C18432 /* YMGuidancePageController(引导页) */,
 				C637B6CB1F8CBBAB0098B8E2 /* YMPageControl */,
 				C68D8B811EEAAFAA004625DA /* IntegralUserTipView.h */,
 				C68D8B821EEAAFAA004625DA /* IntegralUserTipView.m */,
@@ -409,6 +479,7 @@
 		C6EA6F2F1E7B767D003F67D0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F4471F8920FDF6B000879FA0 /* JPVideoPlayer */,
 				C67775EF1F5D003A00705355 /* ThirdTools */,
 				C6EA6F3D1E7B952F003F67D0 /* Category */,
 				C6EA6F321E7B76E8003F67D0 /* Others */,
@@ -445,6 +516,8 @@
 				C6EA6F4F1E7E26B9003F67D0 /* EVNHelper.h */,
 				C6EA6F501E7E26B9003F67D0 /* EVNHelper.m */,
 				C63458661E825281004CA0A8 /* CodeBlockHelper.m */,
+				F47F2514210D7041002252C8 /* GlobalConst.h */,
+				F47F2515210D7041002252C8 /* GlobalConst.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -460,6 +533,8 @@
 				C6EA6F491E7E2519003F67D0 /* EVNCarouselView.m */,
 				C6EA6F521E7E271C003F67D0 /* EVNCarouseCollectionViewFlowLayout.h */,
 				C6EA6F531E7E271C003F67D0 /* EVNCarouseCollectionViewFlowLayout.m */,
+				F4354527210AA7FC0064D811 /* YMFastButton.h */,
+				F4354528210AA7FC0064D811 /* YMFastButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -508,6 +583,8 @@
 				C68D8B7E1EEAA974004625DA /* UIImage+YMImage.m */,
 				C68430E51F31C19000F8FDFE /* UIBezierPath+DWPathUtils.h */,
 				C68430E61F31C19000F8FDFE /* UIBezierPath+DWPathUtils.m */,
+				F435452A210AC2730064D811 /* UIView+Frame.h */,
+				F435452B210AC2730064D811 /* UIView+Frame.m */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -548,6 +625,69 @@
 				F42D871C20B012750090B2BC /* AFRequestManager.m */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		F441FEC020F5B4C000C18432 /* YMGuidancePageController(引导页) */ = {
+			isa = PBXGroup;
+			children = (
+				F441FEC120F5B51900C18432 /* YMGuidancePageCell.h */,
+				F441FEC220F5B51900C18432 /* YMGuidancePageCell.m */,
+				F441FEC420F5CD8B00C18432 /* YMGuidancePapgeController.h */,
+				F441FEC520F5CD8B00C18432 /* YMGuidancePapgeController.m */,
+			);
+			path = "YMGuidancePageController(引导页)";
+			sourceTree = "<group>";
+		};
+		F4471F7B20FDF35D00879FA0 /* WKWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4471FB820FEC78100879FA0 /* WKWebViewController.h */,
+				F4471FB920FEC78100879FA0 /* WKWebViewController.m */,
+				F4471F8520FDF52400879FA0 /* JPVideoPlayerDetailViewController.h */,
+				F4471F8420FDF52400879FA0 /* JPVideoPlayerDetailViewController.m */,
+				F4471F8620FDF52400879FA0 /* JPVideoPlayerDetailViewController.xib */,
+				F4471FBB20FEC86C00879FA0 /* VideoModle.h */,
+				F4471FBC20FEC86C00879FA0 /* VideoModle.m */,
+			);
+			path = WKWebViewController;
+			sourceTree = "<group>";
+		};
+		F4471F8920FDF6B000879FA0 /* JPVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F4471F8A20FDF6B000879FA0 /* JPVideoPlayerManager.h */,
+				F4471F8B20FDF6B000879FA0 /* UITableView+WebVideoCache.h */,
+				F4471F8C20FDF6B000879FA0 /* JPVideoPlayerDownloader.m */,
+				F4471F8D20FDF6B000879FA0 /* JPVideoPlayerCache.m */,
+				F4471F8E20FDF6B000879FA0 /* JPVideoPlayerCacheFile.h */,
+				F4471F8F20FDF6B000879FA0 /* JPVideoPlayerControlViews.h */,
+				F4471F9020FDF6B000879FA0 /* UIView+WebVideoCache.m */,
+				F4471F9120FDF6B000879FA0 /* JPVideoPlayerCompat.m */,
+				F4471F9220FDF6B000879FA0 /* JPVideoPlayerProtocol.h */,
+				F4471F9320FDF6B000879FA0 /* JPVideoPlayerKit.h */,
+				F4471F9420FDF6B000879FA0 /* JPVideoPlayer.h */,
+				F4471F9520FDF6B000879FA0 /* JPVideoPlayerResourceLoader.m */,
+				F4471F9620FDF6B000879FA0 /* JPResourceLoadingRequestTask.h */,
+				F4471F9720FDF6B000879FA0 /* JPVideoPlayerCachePath.h */,
+				F4471F9820FDF6B000879FA0 /* UITableViewCell+WebVideoCache.h */,
+				F4471F9920FDF6B000879FA0 /* JPVideoPlayerSupportUtils.h */,
+				F4471F9A20FDF6B000879FA0 /* JPVideoPlayerCacheFile.m */,
+				F4471F9B20FDF6B000879FA0 /* JPVideoPlayerControlViews.m */,
+				F4471F9C20FDF6B000879FA0 /* JPVideoPlayerCache.h */,
+				F4471F9D20FDF6B000879FA0 /* JPVideoPlayer.bundle */,
+				F4471F9E20FDF6B000879FA0 /* JPVideoPlayerDownloader.h */,
+				F4471F9F20FDF6B000879FA0 /* UITableView+WebVideoCache.m */,
+				F4471FA020FDF6B000879FA0 /* JPVideoPlayerManager.m */,
+				F4471FA120FDF6B000879FA0 /* JPVideoPlayerCompat.h */,
+				F4471FA220FDF6B000879FA0 /* UIView+WebVideoCache.h */,
+				F4471FA320FDF6B000879FA0 /* JPVideoPlayerResourceLoader.h */,
+				F4471FA420FDF6B000879FA0 /* JPVideoPlayer.m */,
+				F4471FA520FDF6B000879FA0 /* JPVideoPlayerSupportUtils.m */,
+				F4471FA620FDF6B000879FA0 /* UITableViewCell+WebVideoCache.m */,
+				F4471FA720FDF6B000879FA0 /* JPVideoPlayerCachePath.m */,
+				F4471FA820FDF6B000879FA0 /* JPResourceLoadingRequestTask.m */,
+			);
+			path = JPVideoPlayer;
 			sourceTree = "<group>";
 		};
 		F4585B902080481000178F80 /* Controllers */ = {
@@ -626,9 +766,9 @@
 				F47756C9206B28E0009A0AC6 /* XibTestViewController.h */,
 				F47756CA206B28E0009A0AC6 /* FBKVOViewController.xib */,
 				F47756CB206B28E0009A0AC6 /* YMLabelViewController.h */,
+				F47756DB206B28E0009A0AC6 /* NSURLSessionViewController.h */,
 				F47756CD206B28E0009A0AC6 /* NSURLSessionViewController.m */,
-				F47756DA206B28E0009A0AC6 /* WKWebViewController.h */,
-				F47756CE206B28E0009A0AC6 /* WKWebViewController.m */,
+				F4471F7B20FDF35D00879FA0 /* WKWebViewController */,
 				F47756CF206B28E0009A0AC6 /* SRWebSocketViewController.xib */,
 				F47756D0206B28E0009A0AC6 /* XibTestViewController.xib */,
 				F47756D1206B28E0009A0AC6 /* WebViewController.m */,
@@ -640,7 +780,6 @@
 				F47756D7206B28E0009A0AC6 /* SRWebSocketViewController.h */,
 				F47756D8206B28E0009A0AC6 /* XibTestViewController.m */,
 				F47756D9206B28E0009A0AC6 /* EmptyDataSetTableViewController.h */,
-				F47756DB206B28E0009A0AC6 /* NSURLSessionViewController.h */,
 				F47756DC206B28E0009A0AC6 /* HookButtonViewController.h */,
 				F47756CC206B28E0009A0AC6 /* HookButtonViewController.m */,
 				F47756DD206B28E0009A0AC6 /* YMLabelViewController.m */,
@@ -804,6 +943,8 @@
 				F4403E84206CBBE400BDBAF1 /* ChameleonUsageViewController.xib in Resources */,
 				F47756EB206B28E0009A0AC6 /* SRWebSocketViewController.xib in Resources */,
 				C6EA6F151E739DCE003F67D0 /* LaunchScreen.storyboard in Resources */,
+				F4471F8820FDF52400879FA0 /* JPVideoPlayerDetailViewController.xib in Resources */,
+				F4471FB020FDF6B000879FA0 /* JPVideoPlayer.bundle in Resources */,
 				C653239F1FFF616500238222 /* WKWebViewText.html in Resources */,
 				F4403E7F206B971100BDBAF1 /* MasonryUsageViewController.xib in Resources */,
 				C6EA6F121E739DCE003F67D0 /* Assets.xcassets in Resources */,
@@ -899,9 +1040,15 @@
 				F4403E7E206B971100BDBAF1 /* MasonryUsageViewController.m in Sources */,
 				F47756F1206B28E0009A0AC6 /* DemystifyingiOSLayoutViewController.m in Sources */,
 				C6EA6F451E7BB36A003F67D0 /* UIButton+YMButton.m in Sources */,
+				F4354529210AA7FC0064D811 /* YMFastButton.m in Sources */,
+				F4471FBA20FEC78100879FA0 /* WKWebViewController.m in Sources */,
 				F47756E8206B28E0009A0AC6 /* HookButtonViewController.m in Sources */,
 				C6EA6F4C1E7E2519003F67D0 /* EVNCarouselCollectionViewCell.m in Sources */,
+				F4471FB620FDF6B000879FA0 /* JPVideoPlayerCachePath.m in Sources */,
+				F4471FB320FDF6B000879FA0 /* JPVideoPlayer.m in Sources */,
 				F47756E9206B28E0009A0AC6 /* NSURLSessionViewController.m in Sources */,
+				F4471FB420FDF6B000879FA0 /* JPVideoPlayerSupportUtils.m in Sources */,
+				F4471FB520FDF6B000879FA0 /* UITableViewCell+WebVideoCache.m in Sources */,
 				F47756E6206B28E0009A0AC6 /* EmptyDataSetTableViewController.m in Sources */,
 				C6EA6F0D1E739DCE003F67D0 /* ViewController.m in Sources */,
 				F47756E5206B28E0009A0AC6 /* SRWebSocketViewController.m in Sources */,
@@ -909,18 +1056,26 @@
 				F4FC3A7D209ABC5F00125A08 /* SJXCSMIPHelper.m in Sources */,
 				F4585B982084849900178F80 /* UIView+GestureCallback.m in Sources */,
 				C607A9CA1EB4613900BA583B /* NSDate+YMDate.m in Sources */,
+				F4471FAB20FDF6B000879FA0 /* UIView+WebVideoCache.m in Sources */,
 				C637B6CE1F8CBBC10098B8E2 /* YMPageControl.m in Sources */,
 				C68D8B6F1EE6B1F0004625DA /* UILabel+YMLabel.m in Sources */,
 				C68430E71F31C19000F8FDFE /* UIBezierPath+DWPathUtils.m in Sources */,
+				F441FEC620F5CD8B00C18432 /* YMGuidancePapgeController.m in Sources */,
 				F4D5A02920BBA95B0047CBA5 /* NetworkManager.m in Sources */,
 				C6EA6F0A1E739DCE003F67D0 /* AppDelegate.m in Sources */,
+				F4471FAF20FDF6B000879FA0 /* JPVideoPlayerControlViews.m in Sources */,
 				C625E204204D1FE300F17804 /* NSString+Extension.m in Sources */,
+				F4471FB120FDF6B000879FA0 /* UITableView+WebVideoCache.m in Sources */,
 				F4E011722074DAB60029B32E /* YMNavigationViewController.m in Sources */,
 				F47756E3206B28E0009A0AC6 /* KVOPrincipleVC.m in Sources */,
+				F4471FB220FDF6B000879FA0 /* JPVideoPlayerManager.m in Sources */,
 				F47070E720E0E18900422FC2 /* IGListKitViewController.m in Sources */,
+				F4471FAD20FDF6B000879FA0 /* JPVideoPlayerResourceLoader.m in Sources */,
 				F42D871A20B011E90090B2BC /* RequestResponse.m in Sources */,
+				F4471F8720FDF52400879FA0 /* JPVideoPlayerDetailViewController.m in Sources */,
 				C6FE7EA41FF0E76C00DC2F93 /* TYHSocketManager.m in Sources */,
 				C68D8B831EEAAFAA004625DA /* IntegralUserTipView.m in Sources */,
+				F435452C210AC2730064D811 /* UIView+Frame.m in Sources */,
 				F47756E2206B28E0009A0AC6 /* NSObject+KVO.m in Sources */,
 				F4D5A02C20BBB3020047CBA5 /* NSNotificationCenter+RACSupport.m in Sources */,
 				F47756F2206B28E0009A0AC6 /* XibTestViewController.m in Sources */,
@@ -928,15 +1083,22 @@
 				F42D871D20B012750090B2BC /* AFRequestManager.m in Sources */,
 				F47756F0206B28E0009A0AC6 /* MultiThreadViewController.m in Sources */,
 				F4403E83206CBBE400BDBAF1 /* ChameleonUsageViewController.m in Sources */,
+				F4471FAA20FDF6B000879FA0 /* JPVideoPlayerCache.m in Sources */,
 				C6EA6F4D1E7E2519003F67D0 /* EVNCarouselView.m in Sources */,
 				C677072E20148D600041E3E3 /* UnReadBubbleView.m in Sources */,
 				F47756FA206B2A31009A0AC6 /* TouchView.m in Sources */,
 				C67775F31F5D006100705355 /* JPLabel.m in Sources */,
+				F4471FAC20FDF6B000879FA0 /* JPVideoPlayerCompat.m in Sources */,
 				F4FC3A79209ABC1C00125A08 /* GCDWebUploadViewController.m in Sources */,
+				F4471FB720FDF6B000879FA0 /* JPResourceLoadingRequestTask.m in Sources */,
+				F4471FBD20FEC86C00879FA0 /* VideoModle.m in Sources */,
 				C67775FA1F5E997D00705355 /* UIControl+JPBtnClickDelay.m in Sources */,
+				F4471FA920FDF6B000879FA0 /* JPVideoPlayerDownloader.m in Sources */,
+				F441FEC320F5B51900C18432 /* YMGuidancePageCell.m in Sources */,
 				F47756ED206B28E0009A0AC6 /* WebViewController.m in Sources */,
+				F4471FAE20FDF6B000879FA0 /* JPVideoPlayerCacheFile.m in Sources */,
+				F47F2516210D7041002252C8 /* GlobalConst.m in Sources */,
 				C6EA6F541E7E271C003F67D0 /* EVNCarouseCollectionViewFlowLayout.m in Sources */,
-				F47756EA206B28E0009A0AC6 /* WKWebViewController.m in Sources */,
 				F47756F7206B2987009A0AC6 /* TouchEventPrincipleVC.m in Sources */,
 				F4EFB9B72078BBC600D9E3AD /* YMMasonryView.m in Sources */,
 				F4585B952084841500178F80 /* NullSafe.m in Sources */,

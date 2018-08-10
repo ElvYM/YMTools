@@ -15,6 +15,8 @@
 #import "ReadOnlyTestModel.h"
 #import "UnReadBubbleView.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+
+#import <SDImageCache.h>
 @interface YMTestViewController ()
 {
     UnReadBubbleView *bv;
@@ -30,10 +32,44 @@
 @end
 
 @implementation YMTestViewController
+// 自己计算缓存大小
+- (void)getFileSize {
+    // NSFileManager
+    // attributesOfItemAtPath:指定文件路径，就能获得文件属性
+    // 把所有文件尺寸加起来
+    
+    // 获取cache文件夹路径
+    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    
+    // 获取default文件路径
+    NSString *defaultPath = [cachePath stringByAppendingString:@"default"];
+    
+    // 遍历文件夹所有文件，累加
+    
+    
+    // 获取文件管理者
+    NSFileManager *mgr = [NSFileManager defaultManager];
+    
+    // 获取文件夹下所有的子路径
+    NSArray *subPaths = [mgr subpathsAtPath:defaultPath];
+    
+    // 获取文件属性
+    NSDictionary *attr = [mgr attributesOfItemAtPath:defaultPath error:nil];
+    
+    // default尺寸
+    NSInteger fileSize = [attr fileSize];
+    
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleRadial withFrame:self.view.frame andColors:@[FlatBlue, FlatPink]];
+    
+    // SDImageCache探究
+    NSInteger size = [SDImageCache sharedImageCache].getSize;
+    
+
 //    [UIColor colorWithRandomColorInArray:@[FlatWhite, FlatRed, FlatBlue]];
     [self jsCoreTest];
 //    [self defaultTest];
