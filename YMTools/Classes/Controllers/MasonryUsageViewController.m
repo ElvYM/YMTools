@@ -151,7 +151,7 @@
 
 -(YMMasonryView *)masonryView {
     if (!_masonryView) {
-        _masonryView = [[YMMasonryView alloc] initWithFrame:CGRectMake(0, 74, MainScreenWidth, MainScreenHeight - 49 - 74)];
+        _masonryView = [[YMMasonryView alloc] initWithFrame:CGRectMake(0, 74, kWidth, kHeight - 49 - 74)];
         _masonryView.backgroundColor = [UIColor lightGrayColor].flatten;
     }
     return _masonryView;
@@ -195,7 +195,7 @@
     CGFloat gapY = 15;    //上下按钮之间的距离
     NSInteger col = 5;    //这里只布局3列
     
-    CGFloat itemWidth = (MainScreenWidth - marginX *2 - (col - 1)*gapX)/col*1.0f;  //根据列数 和 按钮之间的间距 这些参数基本可以确定要平铺的按钮的宽度
+    CGFloat itemWidth = (kWidth - marginX *2 - (col - 1)*gapX)/col*1.0f;  //根据列数 和 按钮之间的间距 这些参数基本可以确定要平铺的按钮的宽度
     CGFloat itemHeight = 52.f;   //按钮的高度可以根据情况设定 这里设置为相等
     
     UIView *last = nil;   //上一个按钮

@@ -19,6 +19,19 @@ PODS:
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
   - CYLTabBarController (1.17.6)
+  - DKNightVersion (2.4.3):
+    - DKNightVersion/Core (= 2.4.3)
+    - DKNightVersion/CoreAnimation (= 2.4.3)
+    - DKNightVersion/UIKit (= 2.4.3)
+  - DKNightVersion/Core (2.4.3):
+    - DKNightVersion/Core/DeallocBlockExecutor (= 2.4.3)
+    - DKNightVersion/Core/extobjc (= 2.4.3)
+  - DKNightVersion/Core/DeallocBlockExecutor (2.4.3)
+  - DKNightVersion/Core/extobjc (2.4.3)
+  - DKNightVersion/CoreAnimation (2.4.3):
+    - DKNightVersion/Core
+  - DKNightVersion/UIKit (2.4.3):
+    - DKNightVersion/Core
   - DZNEmptyDataSet (1.8.1)
   - GCDWebServer (3.4.2):
     - GCDWebServer/Core (= 3.4.2)
@@ -62,6 +75,7 @@ DEPENDENCIES:
   - Bugly
   - ChameleonFramework
   - CYLTabBarController
+  - DKNightVersion
   - DZNEmptyDataSet
   - GCDWebServer (~> 3.0)
   - GCDWebServer/WebDAV (~> 3.0)
@@ -94,6 +108,7 @@ SPEC CHECKSUMS:
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
+  DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   IGListKit: cb97f405ae43e59fe1da74271e19427ec20d3c07
@@ -109,6 +124,6 @@ SPEC CHECKSUMS:
   TZImagePickerController: 9bf89512bb6de53e87897f2e17e607c126a199d6
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: 2bbfac1e837fb68e57d39cb5742bd32864134b95
+PODFILE CHECKSUM: a210ba7c7a098e22b7b2aa9f7f7a5996ee54c746
 
 COCOAPODS: 1.4.0

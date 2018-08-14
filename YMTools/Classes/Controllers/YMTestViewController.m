@@ -123,7 +123,7 @@
     CGFloat loopViewH = 200;
     NSArray *imageArray = @[@"pic.png", @"lunbo2.png", @"lunbo3.png", @"pic.png", @"lunbo2.png"];
     EVNCarouselView *loopView = [[EVNCarouselView alloc] initWithImageArray:imageArray];
-    loopView.frame = CGRectMake(0, 0, MainScreenWidth, loopViewH);
+    loopView.frame = CGRectMake(0, 0, kWidth, loopViewH);
     [self.view addSubview:loopView];
     
     //自定义按钮（上下左右）
@@ -290,7 +290,7 @@
 
 - (UILabel *)testLabel {
     if (!_testLabel) {
-        _testLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 370, MainScreenWidth - 20, 250)];
+        _testLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 370, kWidth - 20, 250)];
         _testLabel.textAlignment = NSTextAlignmentCenter;
         _testLabel.font = [UIFont systemFontOfSize:17];
         _testLabel.textColor = [UIColor blueColor];
