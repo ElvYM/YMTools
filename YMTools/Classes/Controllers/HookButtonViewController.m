@@ -33,6 +33,8 @@
     [self.view addSubview:self.logTF];
     
     self.delayBtn.jp_acceptEventInterval = 2.0f;
+    
+    self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
 }
 
 -(void)normalBtnClick{
@@ -87,7 +89,7 @@
 
 -(UITextView *)logTF {
     if (!_logTF) {
-        _logTF = [[UITextView alloc] initWithFrame:CGRectMake(20, 150, MainScreenWidth, 300)];
+        _logTF = [[UITextView alloc] initWithFrame:CGRectMake(20, 150, kWidth, 300)];
         _logTF.backgroundColor = [UIColor lightGrayColor];
         _logTF.scrollEnabled = NO;
         

@@ -55,13 +55,45 @@
 @property (strong, nonatomic)UIView *view1;
 @property (strong, nonatomic)UIView *view2;
 
-@end
+/**  */
+@property (nonatomic, strong) UIBarButtonItem *nightModeBtn;
 
+/**  */
+@property (nonatomic, assign, getter=isNight) BOOL night;
+
+@end
+/*
+
+ 1.导入
+ 1.1 pod "DKNightVersion"
+ 1.2 pod install
+ 
+ 
+ 2.Import
+ #import <DKNightVersion/DKNightVersion.h>
+ 
+ 
+ 3. Usage:
+ 1.DKColorTable.txt中可配置颜色，获取颜色：DKColorPickerWithKey(BG);
+ 会根据不同状态获取已配置的颜色值。
+ 
+ 2.想要View获得切换功能，需设置dk_backgroundColorPicker
+ self.view.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
+ 
+ 3.3 切换状态
+ self.dk_manager.themeVersion = DKThemeVersionNormal;
+ 
+ self.dk_manager.themeVersion = DKThemeVersionNight;
+ 
+ 
+ 
+ */
 @implementation ViewController
 
 #pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupNav];
     self.titles = @[].mutableCopy;
     self.classNames = @[].mutableCopy;
     [self addCell];
@@ -72,9 +104,21 @@
     
 //    [self getRequest];
     [self postRequest];
-    self.navigationController.title = @"111";
+//    self.navigationController.title = @"111";
 }
 
+- (void)setupNav {
+    UILabel *navigationLabel = [[UILabel alloc] init];
+    navigationLabel.center = self.navigationController.navigationBar.center;
+    navigationLabel.text = @"测试";
+    navigationLabel.textAlignment = NSTextAlignmentCenter;
+    navigationLabel.textColor = RandomFlatColor;
+    self.navigationItem.titleView = navigationLabel;
+    
+    self.navigationItem.leftBarButtonItem = self.nightModeBtn;
+    self.navigationController.navigationBar.dk_barTintColorPicker = DKColorPickerWithKey(BAR);
+    self.navigationItem.leftBarButtonItem.dk_tintColorPicker = DKColorPickerWithKey(TINT);
+}
 
 /**
  Get
@@ -199,7 +243,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuserId];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReuserId];
+//        cell.backgroundColor = RandomFlatColor;
+        cell.dk_backgroundColorPicker =  DKColorPickerWithRGB(0xffffff, 0x343434, 0xfafafa);
     }
+
     cell.textLabel.text = self.titles[indexPath.row];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     return cell;
@@ -213,14 +260,35 @@
     });
 }
 
+- (void)change {
+    if (self.isNight) {
+        self.dk_manager.themeVersion = DKThemeVersionNormal;    }
+    else {
+        self.dk_manager.themeVersion = DKThemeVersionNight;
+    }
+    self.night = !self.isNight;
+}
+
 #pragma mark - getters and setters
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.dk_backgroundColorPicker = DKColorPickerWithKey(BG);
+//        DKColorPickerWithRGB(0xffffff, 0x343434, 0xfafafa);
+        _tableView.dk_separatorColorPicker = DKColorPickerWithKey(SEP);
+        
     }
     return _tableView;
+}
+
+-(UIBarButtonItem *)nightModeBtn {
+    if (!_nightModeBtn) {
+        UIBarButtonItem *nightBtn = [[UIBarButtonItem alloc] initWithTitle:@"Night" style:UIBarButtonItemStylePlain target:self action:@selector(change)];
+        _nightModeBtn = nightBtn;
+    }
+    return _nightModeBtn;
 }
 
 - (void)didReceiveMemoryWarning {

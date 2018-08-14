@@ -12,8 +12,8 @@
 /**
  // MARK: 屏幕适配宏
  */
-#define MainScreenHeight ([UIScreen mainScreen].bounds.size.height)
-#define MainScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kHeight ([UIScreen mainScreen].bounds.size.height)
+#define kWidth ([UIScreen mainScreen].bounds.size.width)
 #define ScreenScaleX ([UIScreen mainScreen].bounds.size.width/375.0)
 #define ScreenScaleY ([UIScreen mainScreen].bounds.size.height/667.0)
 

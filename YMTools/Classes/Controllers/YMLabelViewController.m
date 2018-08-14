@@ -19,6 +19,7 @@
     [super viewDidLoad];
     [self setupNav];
     [self setupYMLabel];
+
 }
 
 - (void)setupNav {
@@ -26,7 +27,7 @@
 }
 
 - (void)setupYMLabel {
-    _textLabel = [[JPLabel alloc] initWithFrame:CGRectMake(0, 100, MainScreenWidth, MainScreenHeight - 100)];
+    _textLabel = [[JPLabel alloc] initWithFrame:CGRectMake(0, 100, kWidth, kHeight - 100)];
     [self.view addSubview:_textLabel];
     
     _textLabel.text = @"#JPLabel# 用于匹配字符串的内容显示, 用户:@盼盼, 包括话题:#怎么追漂亮女孩?#, 链接:https://github.com/Chris-Pan/JPLabel, 协议:《退款政策》, 还有自定义要 高亮显示 的字符串. 再次 高亮显示.";

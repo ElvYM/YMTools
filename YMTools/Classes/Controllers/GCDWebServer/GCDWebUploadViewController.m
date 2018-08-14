@@ -183,8 +183,8 @@
     if (!_showIpLabel) {
         UILabel *lb = [[UILabel alloc] init];
         
-        lb.bounds = CGRectMake(0, 0, MainScreenWidth, 200);
-        lb.center = CGPointMake(MainScreenWidth * 0.5, MainScreenHeight * 0.5);
+        lb.bounds = CGRectMake(0, 0, kWidth, 200);
+        lb.center = CGPointMake(kWidth * 0.5, kHeight * 0.5);
         lb.textColor = [UIColor darkGrayColor];
         lb.textAlignment = NSTextAlignmentCenter;
         lb.font = [UIFont systemFontOfSize:13.0];
@@ -198,7 +198,7 @@
 
 - (UITableView *)fileTableView {
     if (!_fileTableView) {
-        UITableView *tv = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, MainScreenWidth, MainScreenHeight) style:UITableViewStylePlain];
+        UITableView *tv = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kWidth, kHeight) style:UITableViewStylePlain];
         
         // 设置代理
         tv.delegate = self;
@@ -223,7 +223,7 @@
 -(UIImageView *)showImgV {
     if (!_showImgV) {
         UIImageView *imageView = [UIImageView new];
-        imageView.frame = CGRectMake(MainScreenWidth - 100, MainScreenHeight - 200, 80, 80);
+        imageView.frame = CGRectMake(kWidth - 100, kHeight - 200, 80, 80);
         [self.view addSubview:imageView];
         
         _showImgV = imageView;
@@ -237,7 +237,7 @@
         [button setBackgroundColor:[UIColor cyanColor]];
         [button setTitleColor:[UIColor whiteColor].flatten forState:UIControlStateNormal];
         [button setTitle:@"点我选择图片" forState:UIControlStateNormal];
-        button.frame = CGRectMake(MainScreenWidth - 60, 20, 50, 44);
+        button.frame = CGRectMake(kWidth - 60, 20, 50, 44);
         button.titleLabel.font = [UIFont systemFontOfSize:13];
         button.backgroundColor = FlatBlue;
         [button addTarget:self action:@selector(choosePicBtnClick) forControlEvents:UIControlEventTouchUpInside];

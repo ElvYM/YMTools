@@ -97,6 +97,8 @@
 		F47756FA206B2A31009A0AC6 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756F9206B2A31009A0AC6 /* TouchView.m */; };
 		F47F2516210D7041002252C8 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F47F2515210D7041002252C8 /* GlobalConst.m */; };
 		F4863C5D2068D8D60008B46B /* TestFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4863C5C2068D8D60008B46B /* TestFW.framework */; };
+		F4B73909211D97EF0082F46C /* ShowUIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B73908211D97EF0082F46C /* ShowUIListViewController.m */; };
+		F4B73910211D9EFD0082F46C /* UIBootPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7390F211D9EFD0082F46C /* UIBootPageViewController.m */; };
 		F4D5A02920BBA95B0047CBA5 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D5A02820BBA95B0047CBA5 /* NetworkManager.m */; };
 		F4D5A02C20BBB3020047CBA5 /* NSNotificationCenter+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D5A02B20BBB3010047CBA5 /* NSNotificationCenter+RACSupport.m */; };
 		F4E0116F2074DA590029B32E /* YMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E0116E2074DA590029B32E /* YMTabBarController.m */; };
@@ -291,6 +293,11 @@
 		F47F2514210D7041002252C8 /* GlobalConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConst.h; sourceTree = "<group>"; };
 		F47F2515210D7041002252C8 /* GlobalConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConst.m; sourceTree = "<group>"; };
 		F4863C5C2068D8D60008B46B /* TestFW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFW.framework; sourceTree = "<group>"; };
+		F4B73907211D97EF0082F46C /* ShowUIListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowUIListViewController.h; sourceTree = "<group>"; };
+		F4B73908211D97EF0082F46C /* ShowUIListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowUIListViewController.m; sourceTree = "<group>"; };
+		F4B7390A211D98BF0082F46C /* iPhoneXConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneXConst.h; sourceTree = "<group>"; };
+		F4B7390E211D9EFD0082F46C /* UIBootPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBootPageViewController.h; sourceTree = "<group>"; };
+		F4B7390F211D9EFD0082F46C /* UIBootPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBootPageViewController.m; sourceTree = "<group>"; };
 		F4D5A02720BBA95B0047CBA5 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		F4D5A02820BBA95B0047CBA5 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		F4D5A02A20BBB3010047CBA5 /* NSNotificationCenter+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+RACSupport.h"; sourceTree = "<group>"; };
@@ -471,6 +478,7 @@
 				F4863C5C2068D8D60008B46B /* TestFW.framework */,
 				C653239E1FFF616500238222 /* WKWebViewText.html */,
 				C6EA6F061E739DCE003F67D0 /* main.m */,
+				F4B7390A211D98BF0082F46C /* iPhoneXConst.h */,
 				C6EA6F1C1E739DFE003F67D0 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
@@ -709,6 +717,7 @@
 		F47756B8206B28E0009A0AC6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F4B73902211D96C90082F46C /* UIModule */,
 				F4E011692074D94D0029B32E /* Base */,
 				F47756B9206B28E0009A0AC6 /* KVO代码原理探究 */,
 				F47756C1206B28E0009A0AC6 /* Other */,
@@ -808,6 +817,57 @@
 				F4EFB9B62078BBC600D9E3AD /* YMMasonryView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F4B73902211D96C90082F46C /* UIModule */ = {
+			isa = PBXGroup;
+			children = (
+				F4B73906211D96F70082F46C /* Other */,
+				F4B73905211D96F20082F46C /* Models */,
+				F4B73904211D96EE0082F46C /* Views */,
+				F4B73903211D96E70082F46C /* Controllers */,
+			);
+			path = UIModule;
+			sourceTree = "<group>";
+		};
+		F4B73903211D96E70082F46C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4B73907211D97EF0082F46C /* ShowUIListViewController.h */,
+				F4B73908211D97EF0082F46C /* ShowUIListViewController.m */,
+				F4B7390E211D9EFD0082F46C /* UIBootPageViewController.h */,
+				F4B7390F211D9EFD0082F46C /* UIBootPageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F4B73904211D96EE0082F46C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4B73911211DA2030082F46C /* BootPage(引导图 */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4B73905211D96F20082F46C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4B73906211D96F70082F46C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F4B73911211DA2030082F46C /* BootPage(引导图 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "BootPage(引导图";
 			sourceTree = "<group>";
 		};
 		F4D5A13E20C7813A0047CBA5 /* NetWorkManager */ = {
@@ -1003,12 +1063,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YMTools/Pods-YMTools-resources.sh",
+				"${PODS_ROOT}/DKNightVersion/DKNightVersion/ColorTable/DKColorTable.txt",
 				"${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DKColorTable.txt",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GCDWebUploader.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
@@ -1042,6 +1104,7 @@
 				C6EA6F451E7BB36A003F67D0 /* UIButton+YMButton.m in Sources */,
 				F4354529210AA7FC0064D811 /* YMFastButton.m in Sources */,
 				F4471FBA20FEC78100879FA0 /* WKWebViewController.m in Sources */,
+				F4B73910211D9EFD0082F46C /* UIBootPageViewController.m in Sources */,
 				F47756E8206B28E0009A0AC6 /* HookButtonViewController.m in Sources */,
 				C6EA6F4C1E7E2519003F67D0 /* EVNCarouselCollectionViewCell.m in Sources */,
 				F4471FB620FDF6B000879FA0 /* JPVideoPlayerCachePath.m in Sources */,
@@ -1057,6 +1120,7 @@
 				F4585B982084849900178F80 /* UIView+GestureCallback.m in Sources */,
 				C607A9CA1EB4613900BA583B /* NSDate+YMDate.m in Sources */,
 				F4471FAB20FDF6B000879FA0 /* UIView+WebVideoCache.m in Sources */,
+				F4B73909211D97EF0082F46C /* ShowUIListViewController.m in Sources */,
 				C637B6CE1F8CBBC10098B8E2 /* YMPageControl.m in Sources */,
 				C68D8B6F1EE6B1F0004625DA /* UILabel+YMLabel.m in Sources */,
 				C68430E71F31C19000F8FDFE /* UIBezierPath+DWPathUtils.m in Sources */,

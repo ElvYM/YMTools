@@ -9,6 +9,7 @@
 #import "YMTabBarController.h"
 #import "ViewController.h"
 #import "MainNavViewController.h"
+#import "ShowUIListViewController.h"
 
 @interface YMTabBarController ()<UITabBarControllerDelegate>
 
@@ -28,7 +29,7 @@
 {
     UINavigationController *one = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
-    UINavigationController *two = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UINavigationController *two = [[MainNavViewController alloc] initWithRootViewController:[[ShowUIListViewController alloc] init]];
     
     UINavigationController *three = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
@@ -36,7 +37,7 @@
     
     UINavigationController *five = [[MainNavViewController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
-    self.viewControllers = @[two, one, three, five, four];
+    self.viewControllers = @[one, two, three, five, four];
     
 }
 - (void)addTabarItems
@@ -49,7 +50,7 @@
                                                  };
     
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"动画",
+                                                  CYLTabBarItemTitle : @"UI模块",
                                                   CYLTabBarItemImage : @"tabBar_friendTrends_icon",
                                                   CYLTabBarItemSelectedImage : @"tabBar_friendTrends_click_icon",
                                                   };

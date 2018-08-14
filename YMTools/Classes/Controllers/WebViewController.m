@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"调起JS" style:UIBarButtonItemStyleDone target:self action:@selector(runJSFunction)];
     
-    self.webV = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, MainScreenWidth, MainScreenHeight)];
+    self.webV = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, kWidth, kHeight)];
     self.webV.delegate = self;
     [self.webV.scrollView setContentInset:UIEdgeInsetsMake(0, 0, 64, 0)];
     [self.webV.scrollView setBounces:YES];

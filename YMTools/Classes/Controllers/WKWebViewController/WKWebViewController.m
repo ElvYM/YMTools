@@ -148,15 +148,15 @@
         self.title = self.webView.title;
     } else if ([keyPath isEqualToString:@"estimatedProgress"])
     {
-        //NSLog(@"progress: %f", self.webView.estimatedProgress);
-//        self.progressView.progress = self.webView.estimatedProgress;
+        NSLog(@"progress: %f", self.webView.estimatedProgress);
+        self.progressView.progress = self.webView.estimatedProgress;
     }
     
     // 加载完成
     if (!self.webView.loading)
     {
         [UIView animateWithDuration:0.5 animations:^{
-//            self.progressView.alpha = 0.0;
+            self.progressView.alpha = 0.0;
         }];
     }
 }

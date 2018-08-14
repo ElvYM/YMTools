@@ -55,10 +55,15 @@
 
 #import "NSNotificationCenter+RACSupport.h"
 
+// 夜间模式
+#import <DKNightVersion.h>
+
+// const
+#import "iPhoneXConst.h"
 
 //弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
 
-#define YMWeakSelf(type)  __weak typeof(type) weak##type = type
+#define YMWeakSelf(type)  __weak typeof(type) weak##type = type;
 
 
 #endif /* PrefixHeader_pch */
