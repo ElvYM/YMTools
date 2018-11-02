@@ -44,7 +44,13 @@
 #import "IGListKitViewController.h"
 
 // 打包framework静态文件
-#import <TestFW/Tool.h>
+//#import <TestFW/Tool.h>
+
+// 格式化金额字符串添加逗号","格式
+#import "YMStringFormatViewController.h"
+
+// 本地化
+#import "YMLocalLanguageViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titles;
@@ -60,6 +66,8 @@
 
 /**  */
 @property (nonatomic, assign, getter=isNight) BOOL night;
+
+- (NSString *)classString:(Class )class;
 
 @end
 /*
@@ -105,6 +113,7 @@
 //    [self getRequest];
     [self postRequest];
 //    self.navigationController.title = @"111";
+    [self netReachablility];
 }
 
 - (void)setupNav {
@@ -118,6 +127,22 @@
     self.navigationItem.leftBarButtonItem = self.nightModeBtn;
     self.navigationController.navigationBar.dk_barTintColorPicker = DKColorPickerWithKey(BAR);
     self.navigationItem.leftBarButtonItem.dk_tintColorPicker = DKColorPickerWithKey(TINT);
+
+}
+
+
+/**
+ 网络状态
+ */
+- (void)netReachablility {
+    AFNetworkReachabilityManager *mgr = [AFNetworkReachabilityManager sharedManager];
+    if (mgr.isReachableViaWiFi) {
+        NSLog(@"当前网络状态-WIFi");
+    }
+    else if (mgr.isReachableViaWWAN) {
+        NSLog(@"当前网络状态-手机网络");
+    }
+    
 }
 
 /**
@@ -169,7 +194,7 @@
  创建tableView
  */
 - (void)setUpTableView {
-    [Tool log];
+//    [Tool log];
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
@@ -213,12 +238,15 @@
     [self addCell:@"GCDWebServer" class:@"GCDWebServerViewController"];
     [self addCell:@"GCDWebUploader" class:@"GCDWebUploadViewController"];
     [self addCell:@"IGListKit_Test" class:NSStringFromClass([IGListKitViewController class])];
-
+    [self addCell:@"格式化金额字符串添加逗号,格式" class:NSStringFromClass([YMStringFormatViewController class])];
+    [self addCell:@"本地化" class:@"YMLocalLanguageViewController"];
+    
 }
 
 - (void)addCell:(NSString *)title class:(NSString *)className {
     [self.titles addObject:title];
     [self.classNames addObject:className];
+    
 }
 
 #pragma mark - UITableViewDelegate

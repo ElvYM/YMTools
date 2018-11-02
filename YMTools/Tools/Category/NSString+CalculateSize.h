@@ -10,7 +10,6 @@
 #import <UIKit/UIKit.h>
 @interface NSString (CalculateSize)
 /**
- *  @author https://github.com/yaoqi-github
  *
  *  @ function 计算文字的高度
  *
@@ -20,7 +19,6 @@
 - (CGFloat)heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
 
 /**
- *  @author https://github.com/yaoqi-github
  *
  *  @ function 计算文字的宽度
  *
@@ -30,7 +28,6 @@
 - (CGFloat)widthWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height;
 
 /**
- *  @author https://github.com/yaoqi-github
  *
  *  @ function 计算文字的大小
  *
@@ -40,7 +37,6 @@
 - (CGSize)sizeWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
 
 /**
- *  @author https://github.com/yaoqi-github
  *
  *  @ function 计算文字的大小
  *
@@ -50,7 +46,6 @@
 - (CGSize)sizeWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height;
 
 /**
- *  @author https://github.com/yaoqi-github
  *
  *  @ function  反转字符串
  *

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC04E37BC040D8998061AAC2616D5FA0"
+               BlueprintIdentifier = "49AD96BFBD2BD5368FEF1D9A4F7B0503"
                BlueprintName = "RealReachability"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libRealReachability.a">

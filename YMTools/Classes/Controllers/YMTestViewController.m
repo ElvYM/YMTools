@@ -58,17 +58,16 @@
     
     // default尺寸
     NSInteger fileSize = [attr fileSize];
-    
-    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleRadial withFrame:self.view.frame andColors:@[FlatBlue, FlatPink]];
     
+
+    
     // SDImageCache探究
     NSInteger size = [SDImageCache sharedImageCache].getSize;
-    
 
 //    [UIColor colorWithRandomColorInArray:@[FlatWhite, FlatRed, FlatBlue]];
     [self jsCoreTest];
