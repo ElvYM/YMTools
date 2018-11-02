@@ -46,7 +46,7 @@
     self.navigationItem.rightBarButtonItems = @[[[UIBarButtonItem alloc] initWithTitle:@"调起JS" style:UIBarButtonItemStyleDone target:self action:@selector(runJSFunction)],
                                                 [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(back)]];;
     
-    YMWeakSelf(self);
+    YWeak(self);
     
     WKWebViewConfiguration *config = [WKWebViewConfiguration new];
     //初始化偏好设置属性：preferences
@@ -71,7 +71,14 @@
     [config.userContentController addScriptMessageHandler:weakself name:@"senderModel"];
     self.webView = [[WKWebView alloc]initWithFrame:self.view.bounds configuration:config];
     NSURL *path = nil;
-    path = [[NSBundle mainBundle] URLForResource:@"WKWebViewText" withExtension:@"html"];
+//    path = [[NSBundle mainBundle] URLForResource:@"WKWebViewText" withExtension:@"html"];
+    /*
+     https://www.panda.tv
+     https://www.douyu.com
+     http://www.yy.com
+     */
+    
+    path = [NSURL URLWithString:@"http://www.yy.com"];
     [self.webView loadRequest:[NSURLRequest requestWithURL:path]];
     [self.view addSubview:self.webView];
     
@@ -84,8 +91,19 @@
 //    NSURLRequest *request = [NSURLRequest requestWithURL:url];
 //    [_webView loadRequest:request];
     
+//    [self addAlphaView];
 }
 
+
+- (void)addAlphaView {
+    UIView *view = [UIView new];
+    view.backgroundColor = rgba(0, 0, 0, 0.3);
+    view.frame = CGRectMake(0, 0, kWidth, kHeight);
+    view.userInteractionEnabled = NO;
+    [[UIApplication sharedApplication].keyWindow addSubview:view];
+    
+    
+}
 
 - (void)addObserve {
     [_webView addObserver:self forKeyPath:@"loading" options:NSKeyValueObservingOptionNew context:nil];
@@ -126,6 +144,7 @@
         if (responseStr.length == 0) {
             return ;
         }
+        return;
         JPVideoPlayerDetailViewController *single = [JPVideoPlayerDetailViewController new];
 //        single.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:single animated:YES];
@@ -215,6 +234,7 @@
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     NSLog(@"title:%@",webView.title);
     
+    return;
     NSString *JsStr = @"(document.getElementsByTagName(\"video\")[0]).src";
     [webView evaluateJavaScript:JsStr completionHandler:^(id _Nullable response, NSError * _Nullable error) {
         if(![response isEqual:[NSNull null]] && response != nil){

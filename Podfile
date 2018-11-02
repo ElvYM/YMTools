@@ -21,4 +21,5 @@ pod 'TZImagePickerController'
 pod 'RealReachability'
 pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
 pod 'DKNightVersion'
+pod 'DoraemonKit/Core'
 end

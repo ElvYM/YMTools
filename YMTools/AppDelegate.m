@@ -12,6 +12,11 @@
 #import "ViewController.h"
 #import <Bugly/Bugly.h>
 #import "YMTabBarController.h"
+#import "IntroductoryPagesHelper.h"
+#import "AdvertiseHelper.h"
+#import "VersionUpdate.h"
+#import "DoraemonManager.h"
+
 @interface AppDelegate ()<BuglyDelegate>
 
 @end
@@ -20,23 +25,58 @@
 static NSString *BuglyID = @"119944f337";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // 绘制时间
+    CGFloat startTime = [[NSDate date] timeIntervalSince1970] * 1000;
+    
     NSLog(@"del:%@",NSStringFromSelector(_cmd));
     NSLog(@"del:%s",__func__);
     // Override point for customization after application launch.
 //    NSURLSessionViewController *sessionVC =[[NSURLSessionViewController alloc]init];
+    
+    // PHP测试本地接口
+    [[AFRequestManager sharedManager] GET:@"http://localhost/thinkphp_5/public/index.php/demo/index/index" parameters:nil completion:^(RequestResponse *response) {
+        
+    }];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[YMTabBarController alloc] init];
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
     
-//    [self catchCrashLogs];
-//    [self getError];
+    NSString *oldVersion = [[NSUserDefaults standardUserDefaults] objectForKey:old_version];
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    //获取本地的版本号
+    NSString * currentVersion = [infoDic valueForKey:@"CFBundleShortVersionString"];
+    if (![oldVersion isEqualToString:currentVersion]) {
+        // 欢迎视图
+        [IntroductoryPagesHelper showIntroductoryPageView:@[@"10",@"11",@"12",@"13"]];
+        
+        // 存储展示过欢迎界面Version
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:old_version];
+    }
+    
+    NSArray <NSString *> *imagesURLS = @[@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189872684&di=03f9df0b71bb536223236235515cf227&imgtype=0&src=http%3A%2F%2Fatt1.dzwww.com%2Fforum%2F201405%2F29%2F1033545qqmieznviecgdmm.gif", @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495189851096&di=224fad7f17468c2cc080221dd78a4abf&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201505%2F12%2F20150512124019_GPjEJ.gif"];
+    
+    // 启动广告
+    [AdvertiseHelper showAdvertiserView:imagesURLS];
+    
+//  [self catchCrashLogs];
+//  [self getError];
     
     [self bugly];
     
     [self versionInfo];
 
+    // 版本更新
+    [VersionUpdate versionUpdateCheckByAppid:@"414245413"];
+    
+    // 开始监控网络状态
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    [[DoraemonManager shareInstance] install];
+    
+    CGFloat endTime = [[NSDate date] timeIntervalSince1970] * 1000;
+    NSLog(@"绘制耗时: %f ms", endTime - startTime);
     return YES;
 }
 
@@ -62,7 +102,7 @@ static NSString *BuglyID = @"119944f337";
     
     
     
-   
+    
 }
 
 - (void)bugly {
@@ -75,7 +115,6 @@ static NSString *BuglyID = @"119944f337";
 //        config.delegate = self;
 //        return config;
 //    }()];
-
 }
 
 

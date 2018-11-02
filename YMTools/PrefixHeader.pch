@@ -27,7 +27,6 @@
 #import "NSDate+YMDate.h"
 #import "UILabel+YMLabel.h"
 
-
 /*
  View
  */
@@ -41,10 +40,16 @@
 #import <ChameleonFramework/Chameleon.h>
 #import <OnboardingViewController.h>
 #import <MJRefresh.h>
-// webSocket(facebook)
+
+//* NSString
+#import "NSString+CalculateSize.h"
+#import "NSString+SafeString.h"
+#import "NSString+Extension.h"
+
+//* webSocket(facebook)
 #import <SRWebSocket.h>
 
-// 布局
+//* 布局
 #import <Masonry.h>
 
 #import "AFRequestManager.h"
@@ -55,16 +60,37 @@
 
 #import "NSNotificationCenter+RACSupport.h"
 
-// 夜间模式
+//* 夜间模式
 #import <DKNightVersion.h>
 
-// const
+//* const
 #import "iPhoneXConst.h"
+/**项目配置的Const字面量*/
+#import "YMConst.h"
+
+//* 颜色
+#define ColorRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define ColorFromRGB(rgbValue,a) [UIColor colorWithRed:((float) ((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float) ((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float) (rgbValue & 0xFF)) / 255.0 alpha:a]
 
 //弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
+#define YWeak(type)    __weak   typeof(type) weak##type = type;
+#define YStrong(type)  __strong typeof(type) strong##type = type
 
-#define YMWeakSelf(type)  __weak typeof(type) weak##type = type;
+/*
+ #define中 # 号的作用
+ */
+// 一个# .
+#define LogName(name) NSLog(@"my name is %@",@#name);
 
+
+
+
+//* DEBUG模式Log
+#ifdef DEBUG
+#define YMLog(...) NSLog(__VA_ARGS__)
+#else
+#define YMLog(...)
+#endif
 
 #endif /* PrefixHeader_pch */
 

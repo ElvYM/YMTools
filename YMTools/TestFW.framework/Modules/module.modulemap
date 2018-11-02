@@ -1,6 +1,0 @@
-framework module TestFW {
-  umbrella header "TestFW.h"
-
-  export *
-  module * { export * }
-}
