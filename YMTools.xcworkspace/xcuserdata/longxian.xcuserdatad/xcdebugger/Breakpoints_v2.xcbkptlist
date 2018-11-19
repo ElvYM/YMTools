@@ -84,12 +84,12 @@
                   moduleName = "YMTools"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/longxian/YMTools/YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-                  timestampString = "562584565.7326061"
+                  timestampString = "563361748.520857"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "177"
                   endingLineNumber = "177"
-                  offsetFromSymbolStart = "724">
+                  offsetFromSymbolStart = "770">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -99,12 +99,12 @@
                   moduleName = "YMTools"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/longxian/YMTools/YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-                  timestampString = "562584565.734669"
+                  timestampString = "563361748.522926"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "177"
                   endingLineNumber = "177"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -114,12 +114,12 @@
                   moduleName = "YMTools"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/longxian/YMTools/YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-                  timestampString = "562584565.736994"
+                  timestampString = "563361748.524864"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "177"
                   endingLineNumber = "177"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>

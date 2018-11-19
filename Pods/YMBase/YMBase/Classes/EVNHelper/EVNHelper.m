@@ -116,24 +116,24 @@
 
 + (CGSize)adjustWithFont:(UIFont*)font WithText:(NSString *)string WithSize:(CGSize)size
 {
-    CGSize actualsize;
-    if([EVNHelper validateString:string] == NO)
-    {
-        return actualsize = CGSizeZero;
-    }
-    else
-    {
-        NSDictionary * tdic = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName,nil]; // 获取当前文本的属性
-        actualsize =[string boundingRectWithSize:actualsize options:NSStringDrawingUsesLineFragmentOrigin  attributes:tdic context:nil].size;
-        NSAttributedString *attributedText = [[NSAttributedString alloc]
-                                              initWithString:string
-                                              attributes:@{NSFontAttributeName:font}];
-        actualsize = [attributedText boundingRectWithSize:size
-                                                  options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
-                                                  context:nil].size;
-
-    }
-    return actualsize;
+//    CGSize actualsize;
+//    if([EVNHelper validateString:string] == NO)
+//    {
+//        return actualsize = CGSizeZero;
+//    }
+//    else
+//    {
+//        NSDictionary * tdic = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName,nil]; // 获取当前文本的属性
+//        actualsize =[string boundingRectWithSize:actualsize options:NSStringDrawingUsesLineFragmentOrigin  attributes:tdic context:nil].size;
+//        NSAttributedString *attributedText = [[NSAttributedString alloc]
+//                                              initWithString:string
+//                                              attributes:@{NSFontAttributeName:font}];
+//        actualsize = [attributedText boundingRectWithSize:size
+//                                                  options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
+//                                                  context:nil].size;
+//
+//    }
+    return size;
 }
 
 

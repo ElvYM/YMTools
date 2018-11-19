@@ -1,7 +1,5 @@
-## DoraemonKit
-
 <div  align="center">    
- <img src="https://javer.oss-cn-shanghai.aliyuncs.com/doraemon/openSource/doraemon.jpeg" width = "150" height = "100" alt="图片名称" align=left />
+ <img src="https://javer.oss-cn-shanghai.aliyuncs.com/doraemon/github/DoraemonKit_github.png" width = "150" height = "150" alt="图片名称" align=left />
 </div>
 
 <br/>
@@ -10,11 +8,13 @@
 <br/>
 <br/>
 <br/>
-
+<br/>
 
 A collection of testing tools for iOS App development.
 
-## Function List
+[Chinese Readme](https://github.com/didi/DoraemonKit/blob/master/Doc/ChineseReadme.md)
+
+## Feature List
 
 1. Including an entrance to examine information of device, app and app's permissions.
 2. Including a file browser, with a convenient way to transfer file through airDrop.
@@ -26,9 +26,9 @@ A collection of testing tools for iOS App development.
 8. Including a UI viewer, obtaining properties, such as name, position, background color and font size, of every view.
 9. Including a coordinate ruler, a useful tool to acquire screen coordinates and to check the alignment of views.
 
-## Function Show
+## Feature Demonstration
 <div  align="center">    
- <img src="https://javer.oss-cn-shanghai.aliyuncs.com/doraemon/openSource/github/DoraemonKit.png" width = "300" height = "565" alt="图片名称" align=center />
+ <img src="https://javer.oss-cn-shanghai.aliyuncs.com/doraemon/github/DoraemonPanel.jpeg" width = "300" height = "565" alt="图片名称" align=center />
 </div>
 tips: Tools in the top two lines are user-defined. Others are built-in.
 
@@ -39,13 +39,13 @@ DoraemonKit contains two subspecs.
 One is the "WithLogger" subspec that contains the log display  function based on ‘CocoaLumberjack’.
 
 ```
-pod 'DoraemonKit',:subspecs => ['WithLogger'], :git => "https://github.com/didi/DoraemonKit", :tag => '1.0.0'
+pod 'DoraemonKit/WithLogger', '~> 1.0.2'
 ```
 
 The other one is the "Core" subspec that does not contain the log display function.
 
 ```
-pod 'DoraemonKit',:subspecs => ['Core'], :git => "https://github.com/didi/DoraemonKit", :tag => '1.0.0'
+pod 'DoraemonKit/Core', '~> 1.0.2'
 ```
 
 The "Core" subspec is introduced by default.

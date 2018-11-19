@@ -51,6 +51,8 @@
 
 // 本地化
 #import "YMLocalLanguageViewController.h"
+//runtime方法
+#import "NSObject+runtime.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titles;
@@ -98,6 +100,10 @@
  */
 @implementation ViewController
 
++ (void)load {
+    [NSObject runtime_exchangeMethodWithClass:self Method1:@selector(viewDidLoad) Method2:@selector(ym_viewDidLoad)];
+}
+
 #pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -114,6 +120,11 @@
     [self postRequest];
 //    self.navigationController.title = @"111";
     [self netReachablility];
+}
+
+- (void)ym_viewDidLoad {
+    NSLog(@"ym_viewDidLoad");
+    [self ym_viewDidLoad];
 }
 
 - (void)setupNav {
@@ -142,7 +153,6 @@
     else if (mgr.isReachableViaWWAN) {
         NSLog(@"当前网络状态-手机网络");
     }
-    
 }
 
 /**

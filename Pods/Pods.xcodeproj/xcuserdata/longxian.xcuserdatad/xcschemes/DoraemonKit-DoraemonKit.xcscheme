@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DA15F3F8075C8180F25729B2BF19AE24"
+               BlueprintIdentifier = "A4AAC8E5433960DDD67FEF919576972C"
                BuildableName = "DoraemonKit.bundle"
                BlueprintName = "DoraemonKit-DoraemonKit"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA15F3F8075C8180F25729B2BF19AE24"
+            BlueprintIdentifier = "A4AAC8E5433960DDD67FEF919576972C"
             BuildableName = "DoraemonKit.bundle"
             BlueprintName = "DoraemonKit-DoraemonKit"
             ReferencedContainer = "container:Pods.xcodeproj">

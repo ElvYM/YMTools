@@ -36,7 +36,7 @@ static CGFloat const kEntryViewSize = 40;
         
         UIButton *entryBtn = [[UIButton alloc] initWithFrame:self.bounds];
         entryBtn.backgroundColor = [UIColor clearColor];
-        [entryBtn setImage:[UIImage doraemon_imageNamed:@"doraemon"] forState:UIControlStateNormal];
+        [entryBtn setImage:[UIImage doraemon_imageNamed:@"doraemonkit"] forState:UIControlStateNormal];
         entryBtn.layer.cornerRadius = 20.;
         [entryBtn addTarget:self action:@selector(entryClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.rootViewController.view addSubview:entryBtn];
@@ -58,7 +58,7 @@ static CGFloat const kEntryViewSize = 40;
 }
 
 - (void)closePluginClick:(UIButton *)btn{
-    [_entryBtn setImage:[UIImage doraemon_imageNamed:@"doraemon"] forState:UIControlStateNormal];
+    [_entryBtn setImage:[UIImage doraemon_imageNamed:@"doraemonkit"] forState:UIControlStateNormal];
     [_entryBtn removeTarget:self action:@selector(closePluginClick:) forControlEvents:UIControlEventTouchUpInside];
     [_entryBtn addTarget:self action:@selector(entryClick:) forControlEvents:UIControlEventTouchUpInside];
     [[NSNotificationCenter defaultCenter] postNotificationName:DoraemonClosePluginNotification object:nil userInfo:nil];
@@ -88,8 +88,8 @@ static CGFloat const kEntryViewSize = 40;
     [sender setTranslation:CGPointZero inView:sender.view];
     //3、重新设置控件位置
     UIView *panView = sender.view;
-    CGFloat newX = panView.centerX+offsetPoint.x;
-    CGFloat newY = panView.centerY+offsetPoint.y;
+    CGFloat newX = panView.doraemon_centerX+offsetPoint.x;
+    CGFloat newY = panView.doraemon_centerY+offsetPoint.y;
     if (newX < kEntryViewSize/2) {
         newX = kEntryViewSize/2;
     }

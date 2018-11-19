@@ -1,24 +1,25 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BSBacktraceLogger (0.0.1)
   - Bugly (2.5.0)
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
-  - CYLTabBarController (1.17.6)
+  - CYLTabBarController (1.17.20)
   - DKNightVersion (2.4.3):
     - DKNightVersion/Core (= 2.4.3)
     - DKNightVersion/CoreAnimation (= 2.4.3)
@@ -32,7 +33,8 @@ PODS:
     - DKNightVersion/Core
   - DKNightVersion/UIKit (2.4.3):
     - DKNightVersion/Core
-  - DoraemonKit/Core (1.0.0):
+  - DoraemonKit/Core (1.0.3):
+    - BSBacktraceLogger
     - PNChart
   - DZNEmptyDataSet (1.8.1)
   - GCDWebServer (3.4.2):
@@ -42,16 +44,16 @@ PODS:
     - GCDWebServer/Core
   - GCDWebServer/WebUploader (3.4.2):
     - GCDWebServer/Core
-  - IGListKit (3.1.1):
-    - IGListKit/Default (= 3.1.1)
-  - IGListKit/Default (3.1.1):
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
     - IGListKit/Diffing
-  - IGListKit/Diffing (3.1.1)
+  - IGListKit/Diffing (3.4.0)
   - KVOController (1.2.0)
   - Masonry (0.6.4)
   - MBProgressHUD (1.0.0)
-  - MJRefresh (3.1.15.1)
-  - Onboard (2.3.1)
+  - MJRefresh (3.1.15.7)
+  - Onboard (2.3.3)
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
   - ReactiveCocoa (2.5.2):
@@ -61,17 +63,18 @@ PODS:
   - ReactiveCocoa/no-arc (2.5.2)
   - ReactiveCocoa/UI (2.5.2):
     - ReactiveCocoa/Core
-  - RealReachability (1.2.2):
-    - RealReachability/Connection (= 1.2.2)
-    - RealReachability/Ping (= 1.2.2)
-  - RealReachability/Connection (1.2.2)
-  - RealReachability/Ping (1.2.2)
+  - RealReachability (1.3.0):
+    - RealReachability/Connection (= 1.3.0)
+    - RealReachability/Ping (= 1.3.0)
+  - RealReachability/Connection (1.3.0)
+  - RealReachability/Ping (1.3.0)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
   - SocketRocket (0.5.1)
-  - TZImagePickerController (2.0.0.9)
+  - TZImagePickerController (3.1.0)
   - UICountingLabel (1.2.0)
+  - YMBase (0.0.2)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
 
@@ -97,7 +100,35 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7.3)
   - SocketRocket
   - TZImagePickerController
+  - YMBase
   - YTKNetwork (~> 2.0.4)
+
+SPEC REPOS:
+  https://gitee.com/Elv_Y/YMSpecs.git:
+    - YMBase
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - BSBacktraceLogger
+    - Bugly
+    - ChameleonFramework
+    - CYLTabBarController
+    - DKNightVersion
+    - DoraemonKit
+    - DZNEmptyDataSet
+    - GCDWebServer
+    - IGListKit
+    - KVOController
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - Onboard
+    - PNChart
+    - RealReachability
+    - SDWebImage
+    - SocketRocket
+    - TZImagePickerController
+    - UICountingLabel
+    - YTKNetwork
 
 EXTERNAL SOURCES:
   ReactiveCocoa:
@@ -110,29 +141,31 @@ CHECKOUT OPTIONS:
     :tag: 2.5.2
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
+  CYLTabBarController: 376fc15463c582cd5a24a7e9d46a578243bd5b12
   DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
-  DoraemonKit: 8e519fe918da59feab07c58bcfb63135968fbd92
+  DoraemonKit: 088a63c8fe436599ae5d23b4b35cf4b63ac7c6b6
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
-  IGListKit: cb97f405ae43e59fe1da74271e19427ec20d3c07
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
-  Onboard: b6871f25ac753175b2ab9a362fb2feb26a81a311
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  Onboard: 4d6e943e20bdd6bc229df967a347dd7514bc2a6f
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   ReactiveCocoa: 3ff25b1bd992ac79c5c79b26b6c0c1713b715bb2
-  RealReachability: 7ea2093650004e5e30635edbf9d29ce9b9091001
+  RealReachability: eae9c58d2db52fadd8e1cba4b5d4c028454fbc47
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
-  TZImagePickerController: 9bf89512bb6de53e87897f2e17e607c126a199d6
+  TZImagePickerController: c9584b67b97d5a20b4dbbb58505fa0b6be590255
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  YMBase: 669f1642ed83b096f935672dc2d5b6f3b6177554
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: e155d9fe20ed3bdf0b666b0b191b59c382846062
+PODFILE CHECKSUM: 81cd1895ae2b35a4e155e14c74cd40a7288a1fe1
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
