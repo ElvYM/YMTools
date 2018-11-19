@@ -17,6 +17,4 @@ NSString *const discover_name = @"aaa";
 
 NSString *const home_name = @"aaa";
 
-
-
 @end

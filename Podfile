@@ -1,4 +1,8 @@
+# 第二行是为了保证公有库的正常使用
+source 'https://gitee.com/Elv_Y/YMSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
+
 target "YMTools" do
 pod 'AFNetworking', '~> 3.0'
 pod 'Masonry', '~> 0.6.3'
@@ -22,4 +26,5 @@ pod 'RealReachability'
 pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
 pod 'DKNightVersion'
 pod 'DoraemonKit/Core'
+pod 'YMBase'
 end
