@@ -38,8 +38,6 @@ static NSString *BuglyID = @"119944f337";
         
     }];
     
-    NSLog(@"我是一个模拟BUG_001");
-    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[YMTabBarController alloc] init];
     [self.window makeKeyAndVisible];
