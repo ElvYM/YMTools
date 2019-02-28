@@ -15,8 +15,9 @@
 #import "ReadOnlyTestModel.h"
 #import "UnReadBubbleView.h"
 #import <JavaScriptCore/JavaScriptCore.h>
-
 #import <SDImageCache.h>
+#import "Fast.h"
+
 @interface YMTestViewController ()
 {
     UnReadBubbleView *bv;
@@ -29,43 +30,46 @@
 /** 注释 */
 @property (strong, nonatomic)UISearchController *searchController;
 
+/**  */
+@property (nonatomic, strong) NSString *height;
+/**  */
+@property (nonatomic, strong) NSString *str;
+/**  */
+@property (copy, nonatomic)NSString *str2;
 @end
 
 @implementation YMTestViewController
-// 自己计算缓存大小
-- (void)getFileSize {
-    // NSFileManager
-    // attributesOfItemAtPath:指定文件路径，就能获得文件属性
-    // 把所有文件尺寸加起来
-    
-    // 获取cache文件夹路径
-    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
-    
-    // 获取default文件路径
-    NSString *defaultPath = [cachePath stringByAppendingString:@"default"];
-    
-    // 遍历文件夹所有文件，累加
-    
-    
-    // 获取文件管理者
-    NSFileManager *mgr = [NSFileManager defaultManager];
-    
-    // 获取文件夹下所有的子路径
-    NSArray *subPaths = [mgr subpathsAtPath:defaultPath];
-    
-    // 获取文件属性
-    NSDictionary *attr = [mgr attributesOfItemAtPath:defaultPath error:nil];
-    
-    // default尺寸
-    NSInteger fileSize = [attr fileSize];
+
+- (void)test {
+    NSLog(@"别戳我...");
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleRadial withFrame:self.view.frame andColors:@[FlatBlue, FlatPink]];
+
+    // 关键词为什么使用copy
+    NSMutableString *str = [NSMutableString stringWithString:@"123"];
+    self.str = str;
+    self.str2 = str;
+    [str appendString:@"456"];
     
+    NSLog(@"%@ -- %@",self.str, self.str2);
+    NSLog(@"%p-%p-%p",str,self.str,self.str2);
+    
+    
+    self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleRadial withFrame:self.view.frame andColors:@[FlatBlue, FlatPink]];
 
     
+    
+    
+    UIImageView *imageV = [[UIImageView alloc] init];
+    [imageV sd_setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"aa"]];
+    
+  
+    
+    
+    
+    return;
     // SDImageCache探究
     NSInteger size = [SDImageCache sharedImageCache].getSize;
 
@@ -336,6 +340,34 @@
      JSValue *value = [jsContext evaluateScript:@"computePrice(num)"];
      int  intVal = [value  toInt32];
      NSLog(@"计算结果为 %d", intVal);
+}
+
+// 自己计算缓存大小
+- (void)getFileSize {
+    // NSFileManager
+    // attributesOfItemAtPath:指定文件路径，就能获得文件属性
+    // 把所有文件尺寸加起来
+    
+    // 获取cache文件夹路径
+    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    
+    // 获取default文件路径
+    NSString *defaultPath = [cachePath stringByAppendingString:@"default"];
+    
+    // 遍历文件夹所有文件，累加
+    
+    
+    // 获取文件管理者
+    NSFileManager *mgr = [NSFileManager defaultManager];
+    
+    // 获取文件夹下所有的子路径
+    NSArray *subPaths = [mgr subpathsAtPath:defaultPath];
+    
+    // 获取文件属性
+    NSDictionary *attr = [mgr attributesOfItemAtPath:defaultPath error:nil];
+    
+    // default尺寸
+    NSInteger fileSize = [attr fileSize];
 }
 
 @end

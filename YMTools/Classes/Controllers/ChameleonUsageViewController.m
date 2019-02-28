@@ -29,7 +29,7 @@
      
      // 扁平色 Flat_Color
      */
-    self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleRadial withFrame:self.view.frame andColors:@[FlatBlue, FlatPink]];
+    self.view.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleLeftToRight withFrame:self.view.frame andColors:@[[UIColor colorWithHexString:@"f6961d"],[UIColor colorWithHexString:@"fbd13a"]]];
     
     self.redView = [UIView new];
     self.redView.backgroundColor = [[UIColor redColor] flatten];

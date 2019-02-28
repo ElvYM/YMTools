@@ -56,8 +56,6 @@
 
 #import "NetworkManager.h"
 
-#import <ReactiveCocoa.h>
-
 #import "NSNotificationCenter+RACSupport.h"
 
 //* 夜间模式
@@ -67,6 +65,10 @@
 #import "iPhoneXConst.h"
 /**项目配置的Const字面量*/
 #import "YMConst.h"
+
+#import <ReactiveCocoa.h>
+
+#import <Realm.h>
 
 //* 颜色
 #define ColorRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]

@@ -20,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.496931"
+            timestampString = "573031103.6902241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
@@ -36,7 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.499012"
+            timestampString = "573031103.692265"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
@@ -52,139 +52,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.499365"
+            timestampString = "573031103.692619"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.499603"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
-            landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[WKWebViewController observeValueForKeyPath:ofObject:change:context:]"
-                  moduleName = "YMTools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/longxian/YMTools/YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-                  timestampString = "563361748.520857"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "177"
-                  endingLineNumber = "177"
-                  offsetFromSymbolStart = "770">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__70-[WKWebViewController observeValueForKeyPath:ofObject:change:context:]_block_invoke"
-                  moduleName = "YMTools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/longxian/YMTools/YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-                  timestampString = "563361748.522926"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "177"
-                  endingLineNumber = "177"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.184"
-                  moduleName = "YMTools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/longxian/YMTools/YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-                  timestampString = "563361748.524864"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "177"
-                  endingLineNumber = "177"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.499833"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
-            landmarkName = "-webView:didStartProvisionalNavigation:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.500059"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "260"
-            endingLineNumber = "260"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "-webView:didFailProvisionalNavigation:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.5002789"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
-            landmarkName = "-webView:didCommitNavigation:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.5004981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
-            landmarkName = "-webView:didReceiveServerRedirectForProvisionalNavigation:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -211,7 +84,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.500746"
+            timestampString = "573031103.693006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
@@ -227,7 +100,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "561975795.5009691"
+            timestampString = "573031103.693349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "187"

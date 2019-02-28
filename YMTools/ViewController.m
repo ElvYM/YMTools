@@ -54,6 +54,16 @@
 //runtime方法
 #import "NSObject+runtime.h"
 
+#import "UILabel+Fast.h"
+
+#import "YMTableViewController.h"
+//MVVM testVc
+#import "LoginVc.h"
+
+#import "RealmUsageViewController.h"
+
+#import "FastUIViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titles;
 @property (nonatomic, strong) NSMutableArray *classNames;
@@ -120,6 +130,7 @@
     [self postRequest];
 //    self.navigationController.title = @"111";
     [self netReachablility];
+    
 }
 
 - (void)ym_viewDidLoad {
@@ -138,7 +149,6 @@
     self.navigationItem.leftBarButtonItem = self.nightModeBtn;
     self.navigationController.navigationBar.dk_barTintColorPicker = DKColorPickerWithKey(BAR);
     self.navigationItem.leftBarButtonItem.dk_tintColorPicker = DKColorPickerWithKey(TINT);
-
 }
 
 
@@ -250,6 +260,12 @@
     [self addCell:@"IGListKit_Test" class:NSStringFromClass([IGListKitViewController class])];
     [self addCell:@"格式化金额字符串添加逗号,格式" class:NSStringFromClass([YMStringFormatViewController class])];
     [self addCell:@"本地化" class:@"YMLocalLanguageViewController"];
+    [self addCell:@"BaseTableViewTest" class:NSStringFromClass([YMTableViewController class])];
+    [self addCell:@"MVVMDemo" class:NSStringFromClass([LoginVc class])];
+    [self addCell:@"RealmUsage" class:NSStringFromClass([RealmUsageViewController class])];
+    [self addCell:@"链式创建常用UI" class:NSStringFromClass([FastUIViewController class])];
+    
+    
     
 }
 
