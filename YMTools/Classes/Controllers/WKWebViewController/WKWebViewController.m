@@ -78,7 +78,7 @@
      http://www.yy.com
      */
     
-    path = [NSURL URLWithString:@"http://www.yy.com"];
+    path = [NSURL URLWithString:@"https://www.pearvideo.com"];
     [self.webView loadRequest:[NSURLRequest requestWithURL:path]];
     [self.view addSubview:self.webView];
     
@@ -113,7 +113,7 @@
 
 // -MARK:OC调起JS方法
 - (void)runJSFunction {
-//    NSString *url = @"http://www.sexx2015.com/embed/55253";
+//    NSString *url = @"";
 //    JPVideoPlayerDetailViewController *single = [JPVideoPlayerDetailViewController new];
 //    single.hidesBottomBarWhenPushed = YES;
 //    [self.navigationController pushViewController:single animated:YES];
@@ -234,23 +234,21 @@
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     NSLog(@"title:%@",webView.title);
     
-    return;
+    
     NSString *JsStr = @"(document.getElementsByTagName(\"video\")[0]).src";
     [webView evaluateJavaScript:JsStr completionHandler:^(id _Nullable response, NSError * _Nullable error) {
-        if(![response isEqual:[NSNull null]] && response != nil){
-            //截获到视频地址了
-            NSLog(@"response == %@",response);
-            JPVideoPlayerDetailViewController *single = [JPVideoPlayerDetailViewController new];
-            single.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:single animated:YES];
-            single.videoPath = response;
-            
-        }else{
-            //没有视频链接
+        if (YMIsEmpty(response)) {
+            return ;
         }
+        
+        //截获到视频地址了
+        NSLog(@"response == %@",response);
+        JPVideoPlayerDetailViewController *single = [JPVideoPlayerDetailViewController new];
+        single.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:single animated:YES];
+        single.videoPath = response;
+        
     }];
-
-    
     
 }
 

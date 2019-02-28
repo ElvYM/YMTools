@@ -103,29 +103,33 @@
  或者重写pointInside:withEvent方法,改变
  */
 // 在view中重写以下方法，其中self.button就是那个希望被触发点击事件的按钮
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    UIView *view = [super hitTest:point withEvent:event];
-    if (view == nil) {
-        // 转换坐标系
-        CGPoint newPoint = [self.btn convertPoint:point fromView:self];
-        // 判断触摸点是否在button上
-        if (CGRectContainsPoint(self.btn.bounds, newPoint)) {
-            view = self.btn;
-        }
-    }
-    return view;
-}
-
-//-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-//    BOOL pointInside = [super pointInside:point withEvent:event];
-//    if (!pointInside) {
-//        CGPoint newP = [self.btn convertPoint:point fromView:self];
-//        if (CGRectContainsPoint(self.btn.bounds, newP)) {
-//            return YES;
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+//    UIView *view = [super hitTest:point withEvent:event];
+//    if (view == nil) {
+//        /* 转换坐标系:(lldb) po newPoint
+//        (x = 26.5, y = 8.5)
+//        (lldb) po point
+//        (x = 26.5, y = -16.5)
+//         */
+//        CGPoint newPoint = [self.btn convertPoint:point fromView:self];
+//        // 判断触摸点是否在button上
+//        if (CGRectContainsPoint(self.btn.bounds, newPoint)) {
+//            view = self.btn;
 //        }
 //    }
-//    return pointInside;
+//    return view;
 //}
+
+-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    BOOL pointInside = [super pointInside:point withEvent:event];
+    if (!pointInside) {
+        CGPoint newP = [self.btn convertPoint:point fromView:self];
+        if (CGRectContainsPoint(self.btn.bounds, newP)) {
+            return YES;
+        }
+    }
+    return pointInside;
+}
 
 
 -(instancetype)initWithFrame:(CGRect)frame {
