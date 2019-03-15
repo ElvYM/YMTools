@@ -76,21 +76,4 @@
     return _finishBtn;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @end

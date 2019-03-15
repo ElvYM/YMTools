@@ -108,6 +108,4 @@ static NSString *const CellId = @"CellId";
     return _pageControl;
 }
 
-
-
 @end
