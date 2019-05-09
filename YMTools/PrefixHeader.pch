@@ -84,7 +84,9 @@
 // 一个# .
 #define LogName(name) NSLog(@"my name is %@",@#name);
 
-
+//GCD_semaphore宏定义
+#define LOCK(lock) dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
+#define UNLOCK(lock) dispatch_semaphore_signal(lock);
 
 
 //* DEBUG模式Log

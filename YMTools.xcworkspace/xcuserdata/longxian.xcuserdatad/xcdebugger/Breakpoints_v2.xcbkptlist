@@ -19,54 +19,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "573031103.6902241"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "-runJSFunction"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "573031103.692265"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "-runJSFunction"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "573031103.692619"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "258"
-            endingLineNumber = "258"
-            landmarkName = "-webView:didFailProvisionalNavigation:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "YMTools/Classes/Controllers/WebViewController.m"
             timestampString = "560672346.614126"
             startingColumnNumber = "9223372036854775807"
@@ -83,13 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "573031103.693006"
+            filePath = "YMTools/Classes/Tools/JPVideoPlayer/UIView+WebVideoCache.m"
+            timestampString = "575545842.8584501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "-calliOS"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-jp_resumePlayWithURL:bufferingIndicator:controlView:progressView:configuration:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -99,13 +51,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YMTools/Classes/Controllers/WKWebViewController/WKWebViewController.m"
-            timestampString = "573031103.693349"
+            filePath = "YMTools/Classes/Tools/JPVideoPlayer/UIView+WebVideoCache.m"
+            timestampString = "575545842.858488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "-userContentController:didReceiveScriptMessage:"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "-jp_resumePlayWithURL:bufferingIndicator:controlView:progressView:configuration:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

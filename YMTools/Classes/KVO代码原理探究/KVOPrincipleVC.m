@@ -17,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self customKvoTest];
-    
+//    [self customKvoTest];
+    [self thePrincipleOfKVO];
 }
 
 #pragma mark - Custom KVO test
@@ -63,9 +63,14 @@
     //拥有猫
     self.p.cat = self.c;
     
+    
+}
+
+-(void)dealloc {
     //移除KVO
     [self.p removeObserver:self forKeyPath:@"aDog"];
     [self.p removeObserver:self forKeyPath:@"aCat"];
+    NSLog(@"KVOPrincipleDealloc");
 }
 
 - (void)didReceiveMemoryWarning {

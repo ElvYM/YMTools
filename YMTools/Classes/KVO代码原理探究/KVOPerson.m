@@ -19,4 +19,9 @@
     NSLog(@"willChangeValueForKey");
 }
 
+-(void)didChangeValueForKey:(NSString *)key {
+    [super didChangeValueForKey:key];
+    NSLog(@"didChangeValueForKey");
+}
+
 @end

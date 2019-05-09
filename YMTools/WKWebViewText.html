@@ -19,7 +19,7 @@
     
     <div>
       <div><input type="button" value="Prompt 提示框" onclick="callJsInput()"></div><br/>
-      <div><input type="button" value="测试" onclick="calliOS('show love you','dear')"></div>
+      <div><input type="button" value="CallNative" onclick="callNative()"></div>
       <div>Click me here: <a href="http://baidu.com">百度</a></div>
 <!--  http://fuli.droppages.com    -->
     </div>
@@ -59,10 +59,13 @@
       
     }
     
-    
+    function callNative() {
+        window.webkit.messageHandlers.calliOS.postMessage(["1","2"]);
+    }
     
     function tips(parameter) {
         document.getElementById('header').innerHTML = '运行了tips方法。' + '参数:' + parameter;
+        return 'who are you ?'
     }
       </script>
 </body>
