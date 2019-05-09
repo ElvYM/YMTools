@@ -68,7 +68,7 @@
     [self defaultTest];
 //    [self tempTest];
 //    [self SDWebImageTest];
-    [self MBProgressUsageTest];
+//    [self MBProgressUsageTest];
 //    [self showHint:@"33412"];
 //    [self redLabelTest];
     
@@ -109,9 +109,9 @@
     
     //.轮播图
     CGFloat loopViewH = 200;
-    NSArray *imageArray = @[@"pic.png", @"lunbo2.png", @"lunbo3.png", @"pic.png", @"lunbo2.png"];
+    NSArray *imageArray = @[@"10.png", @"11.png", @"12.png", @"13"];
     EVNCarouselView *loopView = [[EVNCarouselView alloc] initWithImageArray:imageArray];
-    loopView.frame = CGRectMake(0, 0, kWidth, loopViewH);
+    loopView.frame = CGRectMake(0, kNavigationBarHeight, kWidth, loopViewH);
     [self.view addSubview:loopView];
     
     //自定义按钮（上下左右）
