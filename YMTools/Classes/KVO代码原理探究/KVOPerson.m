@@ -19,12 +19,9 @@
     NSLog(@"willChangeValueForKey");
 }
 
-<<<<<<< HEAD
 -(void)didChangeValueForKey:(NSString *)key {
     [super didChangeValueForKey:key];
     NSLog(@"didChangeValueForKey");
 }
 
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 @end

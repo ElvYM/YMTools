@@ -12,10 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YMConst : NSObject
 extern NSString *const old_version;
-<<<<<<< HEAD
 
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 @end
 
 NS_ASSUME_NONNULL_END

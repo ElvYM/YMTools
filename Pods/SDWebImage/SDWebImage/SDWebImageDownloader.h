@@ -11,7 +11,6 @@
 #import "SDWebImageOperation.h"
 
 typedef NS_OPTIONS(NSUInteger, SDWebImageDownloaderOptions) {
-<<<<<<< HEAD
     /**
      * Put the download in the low queue priority and task priority.
      */
@@ -20,9 +19,6 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageDownloaderOptions) {
     /**
      * This flag enables progressive download, the image is displayed progressively during download as a browser would do.
      */
-=======
-    SDWebImageDownloaderLowPriority = 1 << 0,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
     SDWebImageDownloaderProgressiveDownload = 1 << 1,
 
     /**
@@ -35,21 +31,12 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageDownloaderOptions) {
      * Call completion block with nil image/imageData if the image was read from NSURLCache
      * (to be combined with `SDWebImageDownloaderUseNSURLCache`).
      */
-<<<<<<< HEAD
     SDWebImageDownloaderIgnoreCachedResponse = 1 << 3,
     
-=======
-
-    SDWebImageDownloaderIgnoreCachedResponse = 1 << 3,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
     /**
      * In iOS 4+, continue the download of the image if the app goes to background. This is achieved by asking the system for
      * extra time in background to let the request finish. If the background task expires the operation will be cancelled.
      */
-<<<<<<< HEAD
-=======
-
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
     SDWebImageDownloaderContinueInBackground = 1 << 4,
 
     /**
@@ -65,7 +52,6 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageDownloaderOptions) {
     SDWebImageDownloaderAllowInvalidSSLCertificates = 1 << 6,
 
     /**
-<<<<<<< HEAD
      * Put the download in the high queue priority and task priority.
      */
     SDWebImageDownloaderHighPriority = 1 << 7,
@@ -74,11 +60,6 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageDownloaderOptions) {
      * Scale down the image
      */
     SDWebImageDownloaderScaleDownLargeImages = 1 << 8,
-=======
-     * Put the image in the high priority queue.
-     */
-    SDWebImageDownloaderHighPriority = 1 << 7,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 };
 
 typedef NS_ENUM(NSInteger, SDWebImageDownloaderExecutionOrder) {
@@ -93,7 +74,6 @@ typedef NS_ENUM(NSInteger, SDWebImageDownloaderExecutionOrder) {
     SDWebImageDownloaderLIFOExecutionOrder
 };
 
-<<<<<<< HEAD
 FOUNDATION_EXPORT NSString * _Nonnull const SDWebImageDownloadStartNotification;
 FOUNDATION_EXPORT NSString * _Nonnull const SDWebImageDownloadStopNotification;
 
@@ -123,16 +103,6 @@ typedef SDHTTPHeadersDictionary * _Nullable (^SDWebImageDownloaderHeadersFilterB
 
 @end
 
-=======
-extern NSString *const SDWebImageDownloadStartNotification;
-extern NSString *const SDWebImageDownloadStopNotification;
-
-typedef void(^SDWebImageDownloaderProgressBlock)(NSInteger receivedSize, NSInteger expectedSize);
-
-typedef void(^SDWebImageDownloaderCompletedBlock)(UIImage *image, NSData *data, NSError *error, BOOL finished);
-
-typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDictionary *headers);
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Asynchronous downloader dedicated and optimized for image loading.
@@ -145,12 +115,9 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  */
 @property (assign, nonatomic) BOOL shouldDecompressImages;
 
-<<<<<<< HEAD
 /**
  *  The maximum number of concurrent downloads
  */
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 @property (assign, nonatomic) NSInteger maxConcurrentDownloads;
 
 /**
@@ -158,16 +125,11 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  */
 @property (readonly, nonatomic) NSUInteger currentDownloadCount;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 /**
  *  The timeout value (in seconds) for the download operation. Default: 15.0.
  */
 @property (assign, nonatomic) NSTimeInterval downloadTimeout;
 
-<<<<<<< HEAD
 /**
  * The configuration in use by the internal NSURLSession.
  * Mutating this object directly has no effect.
@@ -176,8 +138,6 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  */
 @property (readonly, nonatomic, nonnull) NSURLSessionConfiguration *sessionConfiguration;
 
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Changes download operations execution order. Default value is `SDWebImageDownloaderFIFOExecutionOrder`.
@@ -189,38 +149,22 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  *
  *  @return global shared instance of downloader class
  */
-<<<<<<< HEAD
 + (nonnull instancetype)sharedDownloader;
-=======
-+ (SDWebImageDownloader *)sharedDownloader;
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  *  Set the default URL credential to be set for request operations.
  */
-<<<<<<< HEAD
 @property (strong, nonatomic, nullable) NSURLCredential *urlCredential;
-=======
-@property (strong, nonatomic) NSURLCredential *urlCredential;
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Set username
  */
-<<<<<<< HEAD
 @property (strong, nonatomic, nullable) NSString *username;
-=======
-@property (strong, nonatomic) NSString *username;
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Set password
  */
-<<<<<<< HEAD
 @property (strong, nonatomic, nullable) NSString *password;
-=======
-@property (strong, nonatomic) NSString *password;
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Set filter to pick headers for downloading image HTTP request.
@@ -228,7 +172,6 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  * This block will be invoked for each downloading image request, returned
  * NSDictionary will be used as headers in corresponding HTTP request.
  */
-<<<<<<< HEAD
 @property (nonatomic, copy, nullable) SDWebImageDownloaderHeadersFilterBlock headersFilter;
 
 /**
@@ -237,9 +180,6 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  * @return new instance of downloader class
  */
 - (nonnull instancetype)initWithSessionConfiguration:(nullable NSURLSessionConfiguration *)sessionConfiguration NS_DESIGNATED_INITIALIZER;
-=======
-@property (nonatomic, copy) SDWebImageDownloaderHeadersFilterBlock headersFilter;
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Set a value for a HTTP header to be appended to each download HTTP request.
@@ -247,18 +187,13 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  * @param value The value for the header field. Use `nil` value to remove the header.
  * @param field The name of the header field to set.
  */
-<<<<<<< HEAD
 - (void)setValue:(nullable NSString *)value forHTTPHeaderField:(nullable NSString *)field;
-=======
-- (void)setValue:(NSString *)value forHTTPHeaderField:(NSString *)field;
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Returns the value of the specified HTTP header field.
  *
  * @return The value associated with the header field field, or `nil` if there is no corresponding header field.
  */
-<<<<<<< HEAD
 - (nullable NSString *)valueForHTTPHeaderField:(nullable NSString *)field;
 
 /**
@@ -271,19 +206,6 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  * Default is `SDWebImageDownloaderOperation`, Passing `nil` will revert to `SDWebImageDownloaderOperation`.
  */
 - (void)setOperationClass:(nullable Class)operationClass;
-=======
-- (NSString *)valueForHTTPHeaderField:(NSString *)field;
-
-/**
- * Sets a subclass of `SDWebImageDownloaderOperation` as the default
- * `NSOperation` to be used each time SDWebImage constructs a request
- * operation to download an image.
- *
- * @param operationClass The subclass of `SDWebImageDownloaderOperation` to set 
- *        as default. Passing `nil` will revert to `SDWebImageDownloaderOperation`.
- */
-- (void)setOperationClass:(Class)operationClass;
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Creates a SDWebImageDownloader async downloader instance with a given URL
@@ -295,10 +217,7 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  * @param url            The URL to the image to download
  * @param options        The options to be used for this download
  * @param progressBlock  A block called repeatedly while the image is downloading
-<<<<<<< HEAD
  *                       @note the progress block is executed on a background queue
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
  * @param completedBlock A block called once the download is completed.
  *                       If the download succeeded, the image parameter is set, in case of error,
  *                       error parameter is set with the error. The last parameter is always YES
@@ -308,7 +227,6 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  *                       before to be called a last time with the full image and finished argument
  *                       set to YES. In case of error, the finished argument is always YES.
  *
-<<<<<<< HEAD
  * @return A token (SDWebImageDownloadToken) that can be passed to -cancel: to cancel this operation
  */
 - (nullable SDWebImageDownloadToken *)downloadImageWithURL:(nullable NSURL *)url
@@ -322,14 +240,6 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  * @param token The token received from -downloadImageWithURL:options:progress:completed: that should be canceled.
  */
 - (void)cancel:(nullable SDWebImageDownloadToken *)token;
-=======
- * @return A cancellable SDWebImageOperation
- */
-- (id <SDWebImageOperation>)downloadImageWithURL:(NSURL *)url
-                                         options:(SDWebImageDownloaderOptions)options
-                                        progress:(SDWebImageDownloaderProgressBlock)progressBlock
-                                       completed:(SDWebImageDownloaderCompletedBlock)completedBlock;
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Sets the download queue suspension state
@@ -341,7 +251,6 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  */
 - (void)cancelAllDownloads;
 
-<<<<<<< HEAD
 /**
  * Forces SDWebImageDownloader to create and use a new NSURLSession that is
  * initialized with the given configuration.
@@ -360,6 +269,4 @@ typedef NSDictionary *(^SDWebImageDownloaderHeadersFilterBlock)(NSURL *url, NSDi
  */
 - (void)invalidateSessionAndCancel:(BOOL)cancelPendingOperations;
 
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 @end

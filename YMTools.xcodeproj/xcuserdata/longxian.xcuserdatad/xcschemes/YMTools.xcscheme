@@ -26,10 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-<<<<<<< HEAD
-=======
-      language = ""
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -59,10 +55,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-<<<<<<< HEAD
-=======
-      language = ""
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -79,7 +71,6 @@
             ReferencedContainer = "container:YMTools.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-<<<<<<< HEAD
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "DYLD_PRINT_STATISTICS"
@@ -87,8 +78,6 @@
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

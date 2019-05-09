@@ -31,23 +31,17 @@
 		C6EA6F4D1E7E2519003F67D0 /* EVNCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EA6F491E7E2519003F67D0 /* EVNCarouselView.m */; };
 		C6EA6F541E7E271C003F67D0 /* EVNCarouseCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EA6F531E7E271C003F67D0 /* EVNCarouseCollectionViewFlowLayout.m */; };
 		C6FE7EA41FF0E76C00DC2F93 /* TYHSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FE7EA21FF0E76C00DC2F93 /* TYHSocketManager.m */; };
-<<<<<<< HEAD
 		F40264952270420B00045DF8 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40264942270420B00045DF8 /* SwiftViewController.swift */; };
 		F402649A22717F3300045DF8 /* Person+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = F402649922717F3300045DF8 /* Person+runtime.m */; };
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F414D5E2214795900077F378 /* YMStringFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F414D5E1214795900077F378 /* YMStringFormatViewController.m */; };
 		F414D5E82148AB460077F378 /* YMLocalLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F414D5E72148AB460077F378 /* YMLocalLanguageViewController.m */; };
 		F414D5EB2148ABC30077F378 /* language.strings in Resources */ = {isa = PBXBuildFile; fileRef = F414D5ED2148ABC30077F378 /* language.strings */; };
 		F42D86DF20A9301E0090B2BC /* YMToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D86DE20A9301E0090B2BC /* YMToolsTests.m */; };
 		F42D871A20B011E90090B2BC /* RequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D871920B011E90090B2BC /* RequestResponse.m */; };
 		F42D871D20B012750090B2BC /* AFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D871C20B012750090B2BC /* AFRequestManager.m */; };
-<<<<<<< HEAD
 		F42E03842283BFB700C4F34A /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F42E03832283BFB700C4F34A /* Student.m */; };
 		F42E03872283BFC500C4F34A /* Male.m in Sources */ = {isa = PBXBuildFile; fileRef = F42E03862283BFC500C4F34A /* Male.m */; };
 		F42E038A2283F9B700C4F34A /* UIApplication+SnapShot.m in Sources */ = {isa = PBXBuildFile; fileRef = F42E03892283F9B700C4F34A /* UIApplication+SnapShot.m */; };
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F4354529210AA7FC0064D811 /* YMFastButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4354528210AA7FC0064D811 /* YMFastButton.m */; };
 		F437C15B2226783E00431BFC /* Friends.m in Sources */ = {isa = PBXBuildFile; fileRef = F437C15A2226783E00431BFC /* Friends.m */; };
 		F437C15E22267B2400431BFC /* RealmUsageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F437C15D22267B2400431BFC /* RealmUsageViewController.m */; };
@@ -132,15 +126,9 @@
 		F47756FA206B2A31009A0AC6 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F47756F9206B2A31009A0AC6 /* TouchView.m */; };
 		F47B445121E47569006A4F8A /* Person+Man.m in Sources */ = {isa = PBXBuildFile; fileRef = F47B445021E47569006A4F8A /* Person+Man.m */; };
 		F47F2516210D7041002252C8 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F47F2515210D7041002252C8 /* GlobalConst.m */; };
-<<<<<<< HEAD
 		F4B73909211D97EF0082F46C /* ShowUIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B73908211D97EF0082F46C /* ShowUIListViewController.m */; };
 		F4B73910211D9EFD0082F46C /* UIBootPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7390F211D9EFD0082F46C /* UIBootPageViewController.m */; };
 		F4C2C927224B1AD400ED30A9 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C926224B1AD400ED30A9 /* SortViewController.m */; };
-=======
-		F4A90EAE213944190089D28F /* denglulogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A90EAD213944190089D28F /* denglulogo.png */; };
-		F4B73909211D97EF0082F46C /* ShowUIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B73908211D97EF0082F46C /* ShowUIListViewController.m */; };
-		F4B73910211D9EFD0082F46C /* UIBootPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7390F211D9EFD0082F46C /* UIBootPageViewController.m */; };
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F4D461F721B5108F00D18043 /* SXBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D461F621B5108F00D18043 /* SXBaseCollectionViewController.m */; };
 		F4D461FA21B510F700D18043 /* YMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D461F921B510F700D18043 /* YMLabel.m */; };
 		F4D4731E21B654B900D18043 /* LoginVc.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D4731D21B654B900D18043 /* LoginVc.m */; };
@@ -213,13 +201,10 @@
 		C6FE7EA21FF0E76C00DC2F93 /* TYHSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYHSocketManager.m; sourceTree = "<group>"; };
 		C6FE7EA31FF0E76C00DC2F93 /* TYHSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYHSocketManager.h; sourceTree = "<group>"; };
 		CB941B1B872AB4DDC089BDB3 /* Pods-YMTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YMTools/Pods-YMTools.debug.xcconfig"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		F40264932270420B00045DF8 /* YMTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		F40264942270420B00045DF8 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		F402649822717F3300045DF8 /* Person+runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+runtime.h"; sourceTree = "<group>"; };
 		F402649922717F3300045DF8 /* Person+runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+runtime.m"; sourceTree = "<group>"; };
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F414D5E0214795900077F378 /* YMStringFormatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMStringFormatViewController.h; sourceTree = "<group>"; };
 		F414D5E1214795900077F378 /* YMStringFormatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMStringFormatViewController.m; sourceTree = "<group>"; };
 		F414D5E32148AAE10077F378 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -235,15 +220,12 @@
 		F42D871920B011E90090B2BC /* RequestResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestResponse.m; sourceTree = "<group>"; };
 		F42D871B20B012750090B2BC /* AFRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFRequestManager.h; sourceTree = "<group>"; };
 		F42D871C20B012750090B2BC /* AFRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFRequestManager.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		F42E03822283BFB700C4F34A /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		F42E03832283BFB700C4F34A /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		F42E03852283BFC500C4F34A /* Male.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Male.h; sourceTree = "<group>"; };
 		F42E03862283BFC500C4F34A /* Male.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Male.m; sourceTree = "<group>"; };
 		F42E03882283F9B700C4F34A /* UIApplication+SnapShot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SnapShot.h"; sourceTree = "<group>"; };
 		F42E03892283F9B700C4F34A /* UIApplication+SnapShot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SnapShot.m"; sourceTree = "<group>"; };
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F4354527210AA7FC0064D811 /* YMFastButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMFastButton.h; sourceTree = "<group>"; };
 		F4354528210AA7FC0064D811 /* YMFastButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMFastButton.m; sourceTree = "<group>"; };
 		F437C1592226783E00431BFC /* Friends.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Friends.h; sourceTree = "<group>"; };
@@ -406,20 +388,13 @@
 		F47B445021E47569006A4F8A /* Person+Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Man.m"; sourceTree = "<group>"; };
 		F47F2514210D7041002252C8 /* GlobalConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConst.h; sourceTree = "<group>"; };
 		F47F2515210D7041002252C8 /* GlobalConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalConst.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
-		F4A90EAD213944190089D28F /* denglulogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = denglulogo.png; sourceTree = "<group>"; };
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F4B73907211D97EF0082F46C /* ShowUIListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowUIListViewController.h; sourceTree = "<group>"; };
 		F4B73908211D97EF0082F46C /* ShowUIListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowUIListViewController.m; sourceTree = "<group>"; };
 		F4B7390A211D98BF0082F46C /* iPhoneXConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneXConst.h; sourceTree = "<group>"; };
 		F4B7390E211D9EFD0082F46C /* UIBootPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBootPageViewController.h; sourceTree = "<group>"; };
 		F4B7390F211D9EFD0082F46C /* UIBootPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBootPageViewController.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		F4C2C925224B1AD400ED30A9 /* SortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
 		F4C2C926224B1AD400ED30A9 /* SortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F4D461F521B5108F00D18043 /* SXBaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXBaseCollectionViewController.h; sourceTree = "<group>"; };
 		F4D461F621B5108F00D18043 /* SXBaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXBaseCollectionViewController.m; sourceTree = "<group>"; };
 		F4D461F821B510F700D18043 /* YMLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMLabel.h; sourceTree = "<group>"; };
@@ -550,13 +525,10 @@
 				C63828AA1FDA69B200EAFF3D /* Person.m */,
 				F47B444F21E47569006A4F8A /* Person+Man.h */,
 				F47B445021E47569006A4F8A /* Person+Man.m */,
-<<<<<<< HEAD
 				F42E03822283BFB700C4F34A /* Student.h */,
 				F42E03832283BFB700C4F34A /* Student.m */,
 				F42E03852283BFC500C4F34A /* Male.h */,
 				F42E03862283BFC500C4F34A /* Male.m */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -594,18 +566,6 @@
 			isa = PBXGroup;
 			children = (
 				F47756B8206B28E0009A0AC6 /* Classes */,
-<<<<<<< HEAD
-=======
-				C6EA6F081E739DCE003F67D0 /* AppDelegate.h */,
-				C6EA6F091E739DCE003F67D0 /* AppDelegate.m */,
-				C6EA6F0B1E739DCE003F67D0 /* ViewController.h */,
-				C6EA6F0C1E739DCE003F67D0 /* ViewController.m */,
-				F4A90EAD213944190089D28F /* denglulogo.png */,
-				C6EA6F0E1E739DCE003F67D0 /* Main.storyboard */,
-				C6EA6F111E739DCE003F67D0 /* Assets.xcassets */,
-				C6EA6F131E739DCE003F67D0 /* LaunchScreen.storyboard */,
-				C6EA6F161E739DCE003F67D0 /* Info.plist */,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				C6EA6F051E739DCE003F67D0 /* Supporting Files */,
 			);
 			path = YMTools;
@@ -614,20 +574,14 @@
 		C6EA6F051E739DCE003F67D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				C6EA6F111E739DCE003F67D0 /* Assets.xcassets */,
 				C6EA6F161E739DCE003F67D0 /* Info.plist */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				C653239E1FFF616500238222 /* WKWebViewText.html */,
 				C6EA6F061E739DCE003F67D0 /* main.m */,
 				F468C1E9215A2E60002CA1AB /* YMConst.h */,
 				F468C1EA215A2E60002CA1AB /* YMConst.m */,
 				F4B7390A211D98BF0082F46C /* iPhoneXConst.h */,
-<<<<<<< HEAD
 				F40264932270420B00045DF8 /* YMTools-Bridging-Header.h */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				C6EA6F1C1E739DFE003F67D0 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
@@ -764,7 +718,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		F402649722717F0000045DF8 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,8 +727,6 @@
 			path = Runtime;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F41080162194392300D65080 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
@@ -817,7 +768,6 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		F42E038B22840D9500C4F34A /* YMCustom */ = {
 			isa = PBXGroup;
 			children = (
@@ -856,8 +806,6 @@
 			path = MainControllers;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F437C1582226780000431BFC /* RealmTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -941,16 +889,6 @@
 			path = FastUI;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
-		F4585B902080481000178F80 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 		F461DA6E21ABE203006D0BB2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1056,22 +994,10 @@
 		F47756B8206B28E0009A0AC6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				F42E038C2284100D00C4F34A /* Others */,
 				F42E038B22840D9500C4F34A /* YMCustom */,
 				F4E011692074D94D0029B32E /* Main */,
 				F47756B9206B28E0009A0AC6 /* KVO代码原理探究 */,
-=======
-				C68D8B861EF0D27B004625DA /* Model */,
-				C68D8B801EEAAF9E004625DA /* YMCustomView */,
-				C6EA6F2F1E7B767D003F67D0 /* Tools */,
-				F468C1DB215A180F002CA1AB /* Helpers */,
-				F4B73902211D96C90082F46C /* UIModule */,
-				F4E011692074D94D0029B32E /* Main */,
-				F47756B9206B28E0009A0AC6 /* KVO代码原理探究 */,
-				F47756E1206B28E0009A0AC6 /* CustomViews */,
-				F47756C3206B28E0009A0AC6 /* Controllers */,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1080,17 +1006,10 @@
 			isa = PBXGroup;
 			children = (
 				F47756BA206B28E0009A0AC6 /* 自己实现KVO */,
-<<<<<<< HEAD
 				F47756BF206B28E0009A0AC6 /* KVOPrincipleVC.h */,
 				F47756BD206B28E0009A0AC6 /* KVOPrincipleVC.m */,
 				F47756C0206B28E0009A0AC6 /* KVOPerson.h */,
 				F47756BE206B28E0009A0AC6 /* KVOPerson.m */,
-=======
-				F47756BD206B28E0009A0AC6 /* KVOPrincipleVC.m */,
-				F47756BE206B28E0009A0AC6 /* KVOPerson.m */,
-				F47756BF206B28E0009A0AC6 /* KVOPrincipleVC.h */,
-				F47756C0206B28E0009A0AC6 /* KVOPerson.h */,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 			);
 			path = "KVO代码原理探究";
 			sourceTree = "<group>";
@@ -1107,10 +1026,7 @@
 		F47756C3206B28E0009A0AC6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				F402649722717F0000045DF8 /* Runtime */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F44FD2532227AFAD00F226B2 /* FastUI */,
 				F437C1582226780000431BFC /* RealmTest */,
 				F4D4731721B6494900D18043 /* MVVM */,
@@ -1121,10 +1037,7 @@
 				F47756CF206B28E0009A0AC6 /* SRWebSocketViewController.xib */,
 				F47756C5206B28E0009A0AC6 /* DemystifyingiOSLayoutViewController.h */,
 				F47756C6206B28E0009A0AC6 /* MultiThreadViewController.h */,
-<<<<<<< HEAD
 				F47756D5206B28E0009A0AC6 /* MultiThreadViewController.m */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F47756C7206B28E0009A0AC6 /* FBKVOViewController.h */,
 				F47756C8206B28E0009A0AC6 /* EmptyDataSetTableViewController.m */,
 				F47756C9206B28E0009A0AC6 /* XibTestViewController.h */,
@@ -1137,10 +1050,6 @@
 				F47756D1206B28E0009A0AC6 /* WebViewController.m */,
 				F47756D2206B28E0009A0AC6 /* MultiThreadForDelayeShowVC.h */,
 				F47756D4206B28E0009A0AC6 /* FBKVOViewController.m */,
-<<<<<<< HEAD
-=======
-				F47756D5206B28E0009A0AC6 /* MultiThreadViewController.m */,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F47756D6206B28E0009A0AC6 /* DemystifyingiOSLayoutViewController.m */,
 				F47756D8206B28E0009A0AC6 /* XibTestViewController.m */,
 				F47756D9206B28E0009A0AC6 /* EmptyDataSetTableViewController.h */,
@@ -1165,12 +1074,9 @@
 				F461DB6021B4BD98006D0BB2 /* YMTableViewController.m */,
 				F414D5E52148AAFC0077F378 /* 本地化 */,
 				F47070E820E0E8C200422FC2 /* IGListKit */,
-<<<<<<< HEAD
 				F4C2C925224B1AD400ED30A9 /* SortViewController.h */,
 				F4C2C926224B1AD400ED30A9 /* SortViewController.m */,
 				F40264942270420B00045DF8 /* SwiftViewController.swift */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1294,17 +1200,9 @@
 		F4E011692074D94D0029B32E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				F42E038D2284115B00C4F34A /* MainControllers */,
 				C68D8B861EF0D27B004625DA /* Model */,
 				F47756C3206B28E0009A0AC6 /* Controllers */,
-=======
-				F4585B902080481000178F80 /* Controllers */,
-				F4E0116D2074DA590029B32E /* YMTabBarController.h */,
-				F4E0116E2074DA590029B32E /* YMTabBarController.m */,
-				F4E011702074DAB60029B32E /* YMNavigationViewController.h */,
-				F4E011712074DAB60029B32E /* YMNavigationViewController.m */,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1383,10 +1281,7 @@
 					C6EA6F011E739DCE003F67D0 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 258344Y3EZ;
-<<<<<<< HEAD
 						LastSwiftMigration = 1010;
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 						ProvisioningStyle = Automatic;
 					};
 					F42D86DB20A9301E0090B2BC = {
@@ -1427,10 +1322,6 @@
 				F47756EB206B28E0009A0AC6 /* SRWebSocketViewController.xib in Resources */,
 				C6EA6F151E739DCE003F67D0 /* LaunchScreen.storyboard in Resources */,
 				F4471F8820FDF52400879FA0 /* JPVideoPlayerDetailViewController.xib in Resources */,
-<<<<<<< HEAD
-=======
-				F4A90EAE213944190089D28F /* denglulogo.png in Resources */,
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F4471FB020FDF6B000879FA0 /* JPVideoPlayer.bundle in Resources */,
 				C653239F1FFF616500238222 /* WKWebViewText.html in Resources */,
 				F4403E7F206B971100BDBAF1 /* MasonryUsageViewController.xib in Resources */,
@@ -1510,10 +1401,7 @@
 				F47B445121E47569006A4F8A /* Person+Man.m in Sources */,
 				F47756EE206B28E0009A0AC6 /* YMTestViewController.m in Sources */,
 				F44FD2562227B0D200F226B2 /* FastUIViewController.m in Sources */,
-<<<<<<< HEAD
 				F40264952270420B00045DF8 /* SwiftViewController.swift in Sources */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F461DB5E21B4BBB2006D0BB2 /* YMBaseTableViewController.m in Sources */,
 				F461DB2F21AFC15D006D0BB2 /* UIView+GestureCallback.m in Sources */,
 				C60168581EADA58600FC31E0 /* ReadOnlyTestModel.m in Sources */,
@@ -1521,10 +1409,7 @@
 				C61DE4A71F944AAB00897CC7 /* MainTabBarViewController.m in Sources */,
 				C68430E41F31BE5C00F8FDFE /* SlideCaptchaView.m in Sources */,
 				F4403E7E206B971100BDBAF1 /* MasonryUsageViewController.m in Sources */,
-<<<<<<< HEAD
 				F42E038A2283F9B700C4F34A /* UIApplication+SnapShot.m in Sources */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F414D5E2214795900077F378 /* YMStringFormatViewController.m in Sources */,
 				F461DB6121B4BD98006D0BB2 /* YMTableViewController.m in Sources */,
 				F47756F1206B28E0009A0AC6 /* DemystifyingiOSLayoutViewController.m in Sources */,
@@ -1534,10 +1419,7 @@
 				F461DB4621AFC19A006D0BB2 /* NSString+Extension.m in Sources */,
 				F437C15B2226783E00431BFC /* Friends.m in Sources */,
 				F4B73910211D9EFD0082F46C /* UIBootPageViewController.m in Sources */,
-<<<<<<< HEAD
 				F402649A22717F3300045DF8 /* Person+runtime.m in Sources */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F47756E8206B28E0009A0AC6 /* HookButtonViewController.m in Sources */,
 				F461DB4721AFC19A006D0BB2 /* NSFileManager+YMFileManager.m in Sources */,
 				C6EA6F4C1E7E2519003F67D0 /* EVNCarouselCollectionViewCell.m in Sources */,
@@ -1586,20 +1468,14 @@
 				F4D4731E21B654B900D18043 /* LoginVc.m in Sources */,
 				F42D871A20B011E90090B2BC /* RequestResponse.m in Sources */,
 				F4471F8720FDF52400879FA0 /* JPVideoPlayerDetailViewController.m in Sources */,
-<<<<<<< HEAD
 				F42E03872283BFC500C4F34A /* Male.m in Sources */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F461DB1D21AFBFE9006D0BB2 /* UILabel+Fast.m in Sources */,
 				F4D4732421B6573E00D18043 /* LoginModel.m in Sources */,
 				C6FE7EA41FF0E76C00DC2F93 /* TYHSocketManager.m in Sources */,
 				C68D8B831EEAAFAA004625DA /* IntegralUserTipView.m in Sources */,
 				F468C1F1215A3B8D002CA1AB /* AdvertiseView.m in Sources */,
 				F47756E2206B28E0009A0AC6 /* NSObject+KVO.m in Sources */,
-<<<<<<< HEAD
 				F42E03842283BFB700C4F34A /* Student.m in Sources */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F47756F2206B28E0009A0AC6 /* XibTestViewController.m in Sources */,
 				F461DB6421B4CB9D006D0BB2 /* UICollectionView+Fast.m in Sources */,
 				C61DE4A41F944A3000897CC7 /* MainNavViewController.m in Sources */,
@@ -1624,10 +1500,7 @@
 				F47756ED206B28E0009A0AC6 /* WebViewController.m in Sources */,
 				F4471FAE20FDF6B000879FA0 /* JPVideoPlayerCacheFile.m in Sources */,
 				F47F2516210D7041002252C8 /* GlobalConst.m in Sources */,
-<<<<<<< HEAD
 				F4C2C927224B1AD400ED30A9 /* SortViewController.m in Sources */,
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				F461DB3021AFC15D006D0BB2 /* UIButton+YMButton.m in Sources */,
 				C6EA6F541E7E271C003F67D0 /* EVNCarouseCollectionViewFlowLayout.m in Sources */,
 				F47756F7206B2987009A0AC6 /* TouchEventPrincipleVC.m in Sources */,
@@ -1788,10 +1661,7 @@
 			baseConfigurationReference = CB941B1B872AB4DDC089BDB3 /* Pods-YMTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
 				CLANG_ENABLE_MODULES = YES;
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1830,12 +1700,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tools.ym;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/YMTools/YMTools-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 			};
 			name = Debug;
 		};
@@ -1844,10 +1711,7 @@
 			baseConfigurationReference = 8DBDF3ED9C46DD0E2FF7C46F /* Pods-YMTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-<<<<<<< HEAD
 				CLANG_ENABLE_MODULES = YES;
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 258344Y3EZ;
@@ -1885,21 +1749,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tools.ym;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/YMTools/YMTools-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 			};
 			name = Release;
 		};
 		F42D86E320A9301E0090B2BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1927,10 +1785,7 @@
 		F42D86E420A9301E0090B2BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-=======
->>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
