@@ -53,6 +53,10 @@
 
 
 // iOS11弃用了automaticallyAdjustsScrollViewInsets属性，取而代之的是UIScrollView新增了contentInsetAdjustmentBehavior属性。所以要区分开来
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 #define adjustsScrollViewInsets(scrollView)\
 do {\
 _Pragma("clang diagnostic push")\

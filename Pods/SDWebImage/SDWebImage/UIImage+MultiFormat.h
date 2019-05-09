@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * This file is part of the SDWebImage package.
  * (c) Olivier Poitrey <rs@dailymotion.com>
@@ -33,5 +34,20 @@
 + (nullable UIImage *)sd_imageWithData:(nullable NSData *)data;
 - (nullable NSData *)sd_imageData;
 - (nullable NSData *)sd_imageDataAsFormat:(SDImageFormat)imageFormat;
+=======
+//
+//  UIImage+MultiFormat.h
+//  SDWebImage
+//
+//  Created by Olivier Poitrey on 07/06/13.
+//  Copyright (c) 2013 Dailymotion. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIImage (MultiFormat)
+
++ (UIImage *)sd_imageWithData:(NSData *)data;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 @end

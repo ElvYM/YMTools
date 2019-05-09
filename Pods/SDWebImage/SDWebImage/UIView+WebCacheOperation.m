@@ -11,6 +11,7 @@
 
 static char loadOperationKey;
 
+<<<<<<< HEAD
 // key is copy, value is weak because operation instance is retained by SDWebImageManager's runningOperations property
 // we should use lock to keep thread-safe because these method may not be acessed from main queue
 typedef NSMapTable<NSString *, id<SDWebImageOperation>> SDOperationsDictionary;
@@ -68,6 +69,47 @@ typedef NSMapTable<NSString *, id<SDWebImageOperation>> SDOperationsDictionary;
             [operationDictionary removeObjectForKey:key];
         }
     }
+=======
+@implementation UIView (WebCacheOperation)
+
+- (NSMutableDictionary *)operationDictionary {
+    NSMutableDictionary *operations = objc_getAssociatedObject(self, &loadOperationKey);
+    if (operations) {
+        return operations;
+    }
+    operations = [NSMutableDictionary dictionary];
+    objc_setAssociatedObject(self, &loadOperationKey, operations, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    return operations;
+}
+
+- (void)sd_setImageLoadOperation:(id)operation forKey:(NSString *)key {
+    [self sd_cancelImageLoadOperationWithKey:key];
+    NSMutableDictionary *operationDictionary = [self operationDictionary];
+    [operationDictionary setObject:operation forKey:key];
+}
+
+- (void)sd_cancelImageLoadOperationWithKey:(NSString *)key {
+    // Cancel in progress downloader from queue
+    NSMutableDictionary *operationDictionary = [self operationDictionary];
+    id operations = [operationDictionary objectForKey:key];
+    if (operations) {
+        if ([operations isKindOfClass:[NSArray class]]) {
+            for (id <SDWebImageOperation> operation in operations) {
+                if (operation) {
+                    [operation cancel];
+                }
+            }
+        } else if ([operations conformsToProtocol:@protocol(SDWebImageOperation)]){
+            [(id<SDWebImageOperation>) operations cancel];
+        }
+        [operationDictionary removeObjectForKey:key];
+    }
+}
+
+- (void)sd_removeImageLoadOperationWithKey:(NSString *)key {
+    NSMutableDictionary *operationDictionary = [self operationDictionary];
+    [operationDictionary removeObjectForKey:key];
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 }
 
 @end

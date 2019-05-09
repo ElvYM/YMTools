@@ -25,7 +25,11 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
     SDWebImageLowPriority = 1 << 1,
 
     /**
+<<<<<<< HEAD
      * This flag disables on-disk caching after the download finished, only cache in memory
+=======
+     * This flag disables on-disk caching
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
      */
     SDWebImageCacheMemoryOnly = 1 << 2,
 
@@ -87,6 +91,7 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
      * have the hand before setting the image (apply a filter or add it with cross-fade animation for instance)
      * Use this flag if you want to manually set the image in the completion when success
      */
+<<<<<<< HEAD
     SDWebImageAvoidAutoSetImage = 1 << 11,
     
     /**
@@ -125,6 +130,16 @@ typedef void(^SDInternalCompletionBlock)(UIImage * _Nullable image, NSData * _Nu
 typedef NSString * _Nullable(^SDWebImageCacheKeyFilterBlock)(NSURL * _Nullable url);
 
 typedef NSData * _Nullable(^SDWebImageCacheSerializerBlock)(UIImage * _Nonnull image, NSData * _Nullable data, NSURL * _Nullable imageURL);
+=======
+    SDWebImageAvoidAutoSetImage = 1 << 11
+};
+
+typedef void(^SDWebImageCompletionBlock)(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL);
+
+typedef void(^SDWebImageCompletionWithFinishedBlock)(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL);
+
+typedef NSString *(^SDWebImageCacheKeyFilterBlock)(NSURL *url);
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 
 @class SDWebImageManager;
@@ -141,6 +156,7 @@ typedef NSData * _Nullable(^SDWebImageCacheSerializerBlock)(UIImage * _Nonnull i
  *
  * @return Return NO to prevent the downloading of the image on cache misses. If not implemented, YES is implied.
  */
+<<<<<<< HEAD
 - (BOOL)imageManager:(nonnull SDWebImageManager *)imageManager shouldDownloadImageForURL:(nullable NSURL *)imageURL;
 
 /**
@@ -152,6 +168,9 @@ typedef NSData * _Nullable(^SDWebImageCacheSerializerBlock)(UIImage * _Nonnull i
  @return Whether to block this url or not. Return YES to mark this URL as failed.
  */
 - (BOOL)imageManager:(nonnull SDWebImageManager *)imageManager shouldBlockFailedURL:(nonnull NSURL *)imageURL withError:(nonnull NSError *)error;
+=======
+- (BOOL)imageManager:(SDWebImageManager *)imageManager shouldDownloadImageForURL:(NSURL *)imageURL;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Allows to transform the image immediately after it has been downloaded and just before to cache it on disk and memory.
@@ -163,7 +182,11 @@ typedef NSData * _Nullable(^SDWebImageCacheSerializerBlock)(UIImage * _Nonnull i
  *
  * @return The transformed image object.
  */
+<<<<<<< HEAD
 - (nullable UIImage *)imageManager:(nonnull SDWebImageManager *)imageManager transformDownloadedImage:(nullable UIImage *)image withURL:(nullable NSURL *)imageURL;
+=======
+- (UIImage *)imageManager:(SDWebImageManager *)imageManager transformDownloadedImage:(UIImage *)image withURL:(NSURL *)imageURL;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 @end
 
@@ -178,6 +201,7 @@ typedef NSData * _Nullable(^SDWebImageCacheSerializerBlock)(UIImage * _Nonnull i
  * @code
 
 SDWebImageManager *manager = [SDWebImageManager sharedManager];
+<<<<<<< HEAD
 [manager loadImageWithURL:imageURL
                   options:0
                  progress:nil
@@ -186,15 +210,32 @@ SDWebImageManager *manager = [SDWebImageManager sharedManager];
                         // do something with image
                     }
                 }];
+=======
+[manager downloadImageWithURL:imageURL
+                      options:0
+                     progress:nil
+                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                        if (image) {
+                            // do something with image
+                        }
+                    }];
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
  * @endcode
  */
 @interface SDWebImageManager : NSObject
 
+<<<<<<< HEAD
 @property (weak, nonatomic, nullable) id <SDWebImageManagerDelegate> delegate;
 
 @property (strong, nonatomic, readonly, nullable) SDImageCache *imageCache;
 @property (strong, nonatomic, readonly, nullable) SDWebImageDownloader *imageDownloader;
+=======
+@property (weak, nonatomic) id <SDWebImageManagerDelegate> delegate;
+
+@property (strong, nonatomic, readonly) SDImageCache *imageCache;
+@property (strong, nonatomic, readonly) SDWebImageDownloader *imageDownloader;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * The cache filter is a block used each time SDWebImageManager need to convert an URL into a cache key. This can
@@ -205,6 +246,7 @@ SDWebImageManager *manager = [SDWebImageManager sharedManager];
  *
  * @code
 
+<<<<<<< HEAD
 SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
     url = [[NSURL alloc] initWithScheme:url.scheme host:url.host path:url.path];
     return [url absoluteString];
@@ -233,12 +275,23 @@ SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
  * The default value is nil. Means we just store the source downloaded data to disk cache.
  */
 @property (nonatomic, copy, nullable) SDWebImageCacheSerializerBlock cacheSerializer;
+=======
+[[SDWebImageManager sharedManager] setCacheKeyFilter:^(NSURL *url) {
+    url = [[NSURL alloc] initWithScheme:url.scheme host:url.host path:url.path];
+    return [url absoluteString];
+}];
+
+ * @endcode
+ */
+@property (nonatomic, copy) SDWebImageCacheKeyFilterBlock cacheKeyFilter;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Returns global SDWebImageManager instance.
  *
  * @return SDWebImageManager shared instance
  */
+<<<<<<< HEAD
 + (nonnull instancetype)sharedManager;
 
 /**
@@ -246,6 +299,9 @@ SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
  * @return new instance of `SDWebImageManager` with specified cache and downloader.
  */
 - (nonnull instancetype)initWithCache:(nonnull SDImageCache *)cache downloader:(nonnull SDWebImageDownloader *)downloader NS_DESIGNATED_INITIALIZER;
+=======
++ (SDWebImageManager *)sharedManager;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Downloads the image at the given URL if not present in cache or return the cached version otherwise.
@@ -253,11 +309,15 @@ SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
  * @param url            The URL to the image
  * @param options        A mask to specify options to use for this request
  * @param progressBlock  A block called while image is downloading
+<<<<<<< HEAD
  *                       @note the progress block is executed on a background queue
+=======
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
  * @param completedBlock A block called when operation has been completed.
  *
  *   This parameter is required.
  * 
+<<<<<<< HEAD
  *   This block has no return value and takes the requested UIImage as first parameter and the NSData representation as second parameter.
  *   In case of error the image parameter is nil and the third parameter may contain an NSError.
  *
@@ -276,6 +336,24 @@ SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
                                               options:(SDWebImageOptions)options
                                              progress:(nullable SDWebImageDownloaderProgressBlock)progressBlock
                                             completed:(nullable SDInternalCompletionBlock)completedBlock;
+=======
+ *   This block has no return value and takes the requested UIImage as first parameter.
+ *   In case of error the image parameter is nil and the second parameter may contain an NSError.
+ *
+ *   The third parameter is an `SDImageCacheType` enum indicating if the image was retrieved from the local cache
+ *   or from the memory cache or from the network.
+ *
+ *   The last parameter is set to NO when the SDWebImageProgressiveDownload option is used and the image is 
+ *   downloading. This block is thus called repeatedly with a partial image. When image is fully downloaded, the
+ *   block is called a last time with the full image and the last parameter set to YES.
+ *
+ * @return Returns an NSObject conforming to SDWebImageOperation. Should be an instance of SDWebImageDownloaderOperation
+ */
+- (id <SDWebImageOperation>)downloadImageWithURL:(NSURL *)url
+                                         options:(SDWebImageOptions)options
+                                        progress:(SDWebImageDownloaderProgressBlock)progressBlock
+                                       completed:(SDWebImageCompletionWithFinishedBlock)completedBlock;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Saves image to cache for given URL
@@ -285,7 +363,11 @@ SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
  *
  */
 
+<<<<<<< HEAD
 - (void)saveImageToCache:(nullable UIImage *)image forURL:(nullable NSURL *)url;
+=======
+- (void)saveImageToCache:(UIImage *)image forURL:(NSURL *)url;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  * Cancel all current operations
@@ -298,6 +380,27 @@ SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
 - (BOOL)isRunning;
 
 /**
+<<<<<<< HEAD
+=======
+ *  Check if image has already been cached
+ *
+ *  @param url image url
+ *
+ *  @return if the image was already cached
+ */
+- (BOOL)cachedImageExistsForURL:(NSURL *)url;
+
+/**
+ *  Check if image has already been cached on disk only
+ *
+ *  @param url image url
+ *
+ *  @return if the image was already cached (disk only)
+ */
+- (BOOL)diskImageExistsForURL:(NSURL *)url;
+
+/**
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
  *  Async check if image has already been cached
  *
  *  @param url              image url
@@ -305,8 +408,13 @@ SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
  *  
  *  @note the completion block is always executed on the main queue
  */
+<<<<<<< HEAD
 - (void)cachedImageExistsForURL:(nullable NSURL *)url
                      completion:(nullable SDWebImageCheckCacheCompletionBlock)completionBlock;
+=======
+- (void)cachedImageExistsForURL:(NSURL *)url
+                     completion:(SDWebImageCheckCacheCompletionBlock)completionBlock;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 /**
  *  Async check if image has already been cached on disk only
@@ -316,13 +424,43 @@ SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL * _Nullable url) {
  *
  *  @note the completion block is always executed on the main queue
  */
+<<<<<<< HEAD
 - (void)diskImageExistsForURL:(nullable NSURL *)url
                    completion:(nullable SDWebImageCheckCacheCompletionBlock)completionBlock;
+=======
+- (void)diskImageExistsForURL:(NSURL *)url
+                   completion:(SDWebImageCheckCacheCompletionBlock)completionBlock;
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 
 /**
  *Return the cache key for a given URL
  */
+<<<<<<< HEAD
 - (nullable NSString *)cacheKeyForURL:(nullable NSURL *)url;
+=======
+- (NSString *)cacheKeyForURL:(NSURL *)url;
+
+@end
+
+
+#pragma mark - Deprecated
+
+typedef void(^SDWebImageCompletedBlock)(UIImage *image, NSError *error, SDImageCacheType cacheType) __deprecated_msg("Block type deprecated. Use `SDWebImageCompletionBlock`");
+typedef void(^SDWebImageCompletedWithFinishedBlock)(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) __deprecated_msg("Block type deprecated. Use `SDWebImageCompletionWithFinishedBlock`");
+
+
+@interface SDWebImageManager (Deprecated)
+
+/**
+ *  Downloads the image at the given URL if not present in cache or return the cached version otherwise.
+ *
+ *  @deprecated This method has been deprecated. Use `downloadImageWithURL:options:progress:completed:`
+ */
+- (id <SDWebImageOperation>)downloadWithURL:(NSURL *)url
+                                    options:(SDWebImageOptions)options
+                                   progress:(SDWebImageDownloaderProgressBlock)progressBlock
+                                  completed:(SDWebImageCompletedWithFinishedBlock)completedBlock __deprecated_msg("Method deprecated. Use `downloadImageWithURL:options:progress:completed:`");
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 @end

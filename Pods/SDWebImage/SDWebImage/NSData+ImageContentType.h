@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * This file is part of the SDWebImage package.
  * (c) Olivier Poitrey <rs@dailymotion.com>
@@ -20,10 +21,19 @@ typedef NS_ENUM(NSInteger, SDImageFormat) {
     SDImageFormatHEIC,
     SDImageFormatHEIF
 };
+=======
+//
+// Created by Fabrice Aneche on 06/01/14.
+// Copyright (c) 2014 Dailymotion. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 @interface NSData (ImageContentType)
 
 /**
+<<<<<<< HEAD
  *  Return image format
  *
  *  @param data the input image data
@@ -47,5 +57,21 @@ typedef NS_ENUM(NSInteger, SDImageFormat) {
  *  @return The Format as SDImageFormat
  */
 + (SDImageFormat)sd_imageFormatFromUTType:(nonnull CFStringRef)uttype;
+=======
+ *  Compute the content type for an image data
+ *
+ *  @param data the input data
+ *
+ *  @return the content type as string (i.e. image/jpeg, image/gif)
+ */
++ (NSString *)sd_contentTypeForImageData:(NSData *)data;
+
+@end
+
+
+@interface NSData (ImageContentTypeDeprecated)
+
++ (NSString *)contentTypeForImageData:(NSData *)data __deprecated_msg("Use `sd_contentTypeForImageData:`");
+>>>>>>> 8b86b9a983b53b4c245521957c7678fa7c253334
 
 @end
