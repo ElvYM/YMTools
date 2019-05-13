@@ -46,7 +46,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     // 关键词为什么使用copy
     NSMutableString *str = [NSMutableString stringWithString:@"123"];
     self.str = str;
