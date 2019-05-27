@@ -65,10 +65,13 @@
 #import "FastUIViewController.h"
 // 排序
 #import "SortViewController.h"
+// hot fix
+#import "MangoFixUsageViewController.h"
 
 #import <objc/runtime.h>
 
 #import "YMTools-Swift.h"
+
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -247,11 +250,10 @@
 - (void)addCell {
     [self addCell:@"YM常用测试" class:@"YMTestViewController"];
     [self addCell:@"多线程(MultiThreadViewController)" class:@"MultiThreadViewController"];
-    [self addCell:@"NSURLSession" class:@"NSURLSessionViewController"];
+    [self addCell:@"NSURLSession使用" class:@"NSURLSessionViewController"];
     [self addCell:@"匹配一段文字中的用户名/话题/链接/协议等" class:@"YMLabelViewController"];
     [self addCell:@"延时按钮点击hook" class:@"HookButtonViewController"];
     [self addCell:@"并发其实很简单" class:@"MultiThreadForDelayeShowVC"];
-    [self addCell:@"xib测试-UIStackView" class:@"MultiThreadForDelayeShowVC"];
     [self addCell:@"Facebook_KVO" class:@"FBKVOViewController"];
     [self addCell:@"SRWebSocket" class:@"SRWebSocketViewController"];
     [self addCell:@"WKWebViewController" class:@"WKWebViewController"];
@@ -266,12 +268,13 @@
     [self addCell:@"IGListKit_Test" class:NSStringFromClass([IGListKitViewController class])];
     [self addCell:@"格式化金额字符串添加逗号,格式" class:NSStringFromClass([YMStringFormatViewController class])];
     [self addCell:@"本地化" class:@"YMLocalLanguageViewController"];
-    [self addCell:@"BaseTableViewTest" class:NSStringFromClass([YMTableViewController class])];
+//    [self addCell:@"BaseTableViewTest" class:NSStringFromClass([YMTableViewController class])];
     [self addCell:@"MVVMDemo" class:NSStringFromClass([LoginVc class])];
     [self addCell:@"RealmUsage" class:NSStringFromClass([RealmUsageViewController class])];
     [self addCell:@"链式创建常用UI" class:NSStringFromClass([FastUIViewController class])];
     [self addCell:@"排序" class:@"SortViewController"];
     [self addCell:@"Swift" class:NSStringFromClass([SwiftViewController class])];
+    [self addCell:@"MangoFixUsageViewController-mango热修复" class:NSStringFromClass([MangoFixUsageViewController class])];
     
     
 }

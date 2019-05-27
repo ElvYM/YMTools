@@ -357,7 +357,7 @@ static NSString *urlStr = @"http://lcatapi.lmboss.com/API/Cart/GetShopcart?commu
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setBackgroundColor:[UIColor blueColor]];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [button setTitle:@"  " forState:UIControlStateNormal];
+        [button setTitle:@" ... " forState:UIControlStateNormal];
         button.frame = CGRectMake(10, 200, 100, 40);
         [button addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
         _btn = button;
@@ -366,10 +366,10 @@ static NSString *urlStr = @"http://lcatapi.lmboss.com/API/Cart/GetShopcart?commu
 }
 
 - (void)btnClick {
-    JPVideoPlayerDetailViewController *single = [JPVideoPlayerDetailViewController new];
-    single.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:single animated:YES];
-    single.videoPath = self.localUrl;
+//    JPVideoPlayerDetailViewController *single = [JPVideoPlayerDetailViewController new];
+//    single.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:single animated:YES];
+//    single.videoPath = self.localUrl;
 }
 
 - (void)didReceiveMemoryWarning {

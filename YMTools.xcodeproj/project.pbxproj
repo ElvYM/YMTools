@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4A9247229B9089001E2340 /* ym.mg in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A9246229B9089001E2340 /* ym.mg */; };
+		3D4A924A229B91ED001E2340 /* MangoFixUsageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9249229B91ED001E2340 /* MangoFixUsageViewController.m */; };
 		6F5A578FEF9F3C06A59F6B0D /* libPods-YMTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 470E1FBF22DB378B8DF7A20D /* libPods-YMTools.a */; };
 		C60168581EADA58600FC31E0 /* ReadOnlyTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C60168571EADA58600FC31E0 /* ReadOnlyTestModel.m */; };
 		C61DE4A41F944A3000897CC7 /* MainNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61DE4A31F944A3000897CC7 /* MainNavViewController.m */; };
@@ -154,6 +156,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D4A9246229B9089001E2340 /* ym.mg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ym.mg; sourceTree = "<group>"; };
+		3D4A9248229B91ED001E2340 /* MangoFixUsageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MangoFixUsageViewController.h; sourceTree = "<group>"; };
+		3D4A9249229B91ED001E2340 /* MangoFixUsageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangoFixUsageViewController.m; sourceTree = "<group>"; };
 		470E1FBF22DB378B8DF7A20D /* libPods-YMTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YMTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBDF3ED9C46DD0E2FF7C46F /* Pods-YMTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-YMTools/Pods-YMTools.release.xcconfig"; sourceTree = "<group>"; };
 		C60168561EADA58600FC31E0 /* ReadOnlyTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadOnlyTestModel.h; sourceTree = "<group>"; };
@@ -574,6 +579,7 @@
 		C6EA6F051E739DCE003F67D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D4A9246229B9089001E2340 /* ym.mg */,
 				C6EA6F111E739DCE003F67D0 /* Assets.xcassets */,
 				C6EA6F161E739DCE003F67D0 /* Info.plist */,
 				C653239E1FFF616500238222 /* WKWebViewText.html */,
@@ -1077,6 +1083,8 @@
 				F4C2C925224B1AD400ED30A9 /* SortViewController.h */,
 				F4C2C926224B1AD400ED30A9 /* SortViewController.m */,
 				F40264942270420B00045DF8 /* SwiftViewController.swift */,
+				3D4A9248229B91ED001E2340 /* MangoFixUsageViewController.h */,
+				3D4A9249229B91ED001E2340 /* MangoFixUsageViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1327,6 +1335,7 @@
 				F4403E7F206B971100BDBAF1 /* MasonryUsageViewController.xib in Resources */,
 				C6EA6F121E739DCE003F67D0 /* Assets.xcassets in Resources */,
 				C6EA6F101E739DCE003F67D0 /* Main.storyboard in Resources */,
+				3D4A9247229B9089001E2340 /* ym.mg in Resources */,
 				F47756E7206B28E0009A0AC6 /* FBKVOViewController.xib in Resources */,
 				F455B482215C7E1F00C9A65D /* updateBackImg.png in Resources */,
 			);
@@ -1366,7 +1375,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YMTools/Pods-YMTools-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-YMTools/Pods-YMTools-resources.sh",
 				"${PODS_ROOT}/DKNightVersion/DKNightVersion/ColorTable/DKColorTable.txt",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle",
@@ -1383,7 +1392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMTools/Pods-YMTools-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YMTools/Pods-YMTools-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1422,6 +1431,7 @@
 				F402649A22717F3300045DF8 /* Person+runtime.m in Sources */,
 				F47756E8206B28E0009A0AC6 /* HookButtonViewController.m in Sources */,
 				F461DB4721AFC19A006D0BB2 /* NSFileManager+YMFileManager.m in Sources */,
+				3D4A924A229B91ED001E2340 /* MangoFixUsageViewController.m in Sources */,
 				C6EA6F4C1E7E2519003F67D0 /* EVNCarouselCollectionViewCell.m in Sources */,
 				F461DB3321AFC15D006D0BB2 /* UIView+Frame.m in Sources */,
 				F468C1F2215A3B8D002CA1AB /* AdvertiseHelper.m in Sources */,

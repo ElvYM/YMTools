@@ -69,6 +69,8 @@
 #import <ReactiveCocoa.h>
 
 #import <Realm.h>
+//hot fix
+#import <MangoFix.h>
 
 //* 颜色
 #define ColorRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]

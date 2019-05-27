@@ -28,4 +28,5 @@ pod 'DoraemonKit/Core'
 pod 'YMBase'
 pod 'Realm'
 pod 'SDWebImage'
+pod 'MangoFix'
 end

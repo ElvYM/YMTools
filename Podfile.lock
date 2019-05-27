@@ -50,6 +50,7 @@ PODS:
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
   - KVOController (1.2.0)
+  - MangoFix (1.1.9)
   - Masonry (0.6.4)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.15.7)
@@ -94,6 +95,7 @@ DEPENDENCIES:
   - GCDWebServer/WebUploader (~> 3.0)
   - IGListKit (~> 3.0)
   - KVOController
+  - MangoFix
   - Masonry (~> 0.6.3)
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh
@@ -122,6 +124,7 @@ SPEC REPOS:
     - GCDWebServer
     - IGListKit
     - KVOController
+    - MangoFix
     - Masonry
     - MBProgressHUD
     - MJRefresh
@@ -148,6 +151,7 @@ SPEC CHECKSUMS:
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  MangoFix: e7485a969c3622f423c268c868d47668efa396cc
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
@@ -163,6 +167,6 @@ SPEC CHECKSUMS:
   YMBase: 669f1642ed83b096f935672dc2d5b6f3b6177554
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: 3ea773cfb33cd8ed0aadc011a912ef20c4958ac7
+PODFILE CHECKSUM: ac7c2db7139342b3eb63df61f14b3d28120626f7
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.2

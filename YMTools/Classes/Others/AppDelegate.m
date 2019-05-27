@@ -101,9 +101,19 @@ static NSString *BuglyID = @"119944f337";
     
     [[DoraemonManager shareInstance] install];
     
+    [self startMango];
+    
+    
     CGFloat endTime = [[NSDate date] timeIntervalSince1970] * 1000;
     NSLog(@"绘制耗时: %f ms", endTime - startTime);
     return YES;
+}
+    
+- (void)startMango {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"ym" ofType:@"mg"];
+    NSURL *scriptUrl = [NSURL fileURLWithPath:path];
+    MFContext *context = [[MFContext alloc] init];
+    [context evalMangoScriptWithURL:scriptUrl];
 }
 
 - (void)versionInfo {
